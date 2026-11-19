@@ -13,18 +13,21 @@ namespace PowerGym.Vistas
     public class FormLogin:Form
     {
         private readonly ILoginControlador _controlador;
+        private readonly IRegistroControlador _registro;
 
         // Controles (los objetos visibles de la ventana).
         private Label lblTitulo;
         private Label lblUsuario;
         private TextBox txtUsuario;
         private Button btnIngresar;
+        private Button btnRegistrar;
 
         public Persona PersonaAutenticada { get; private set; }
 
-        public FormLogin(ILoginControlador controlador)
+        public FormLogin(ILoginControlador controlador,IRegistroControlador registro)
         {
             _controlador = controlador;
+            _registro = registro;
             ConstruirInterfaz();
         }
 
@@ -32,7 +35,7 @@ namespace PowerGym.Vistas
         {
             // Propiedades de la ventana.
             Text = "PowerGym - Iniciar sesión";
-            ClientSize = new Size(320, 190);          // tamaño interior en píxeles
+            ClientSize = new Size(320, 240);          // tamaño interior en píxeles
             StartPosition = FormStartPosition.CenterScreen;   // aparece centrada
             FormBorderStyle = FormBorderStyle.FixedDialog;    // no se puede redimensionar
             MaximizeBox = false;                      // sin botón de maximizar
@@ -67,10 +70,17 @@ namespace PowerGym.Vistas
             };
 
             btnIngresar.Click += BtnIngresar_Click;
-
-            // Enter equivale a hacer clic en Ingresar.
             AcceptButton = btnIngresar;
-
+           
+            btnRegistrar = new Button
+            {
+                Text = "Crear Cuenta",
+                Location = new Point(40, 170),
+                Width = 240,
+                Height = 34
+            };
+            btnRegistrar.Click += BtnRegistrar_Click;
+            Controls.Add(btnRegistrar);
             // Sin esto los controles no aparecen: hay que agregarlos a la ventana.
             Controls.Add(lblTitulo);
             Controls.Add(lblUsuario);
@@ -94,6 +104,18 @@ namespace PowerGym.Vistas
                 MessageBox.Show(ex.Message, "No se pudo iniciar sesión",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtUsuario.Focus();    // deja el cursor listo para reintentar
+            }
+
+
+        }
+
+        private void BtnRegistrar_Click(object sender, EventArgs e)
+        {
+            using (var registro = new FormRegistro(_registro))
+            {
+                // Si se registró, deja su usuario escrito para entrar con un clic.
+                if (registro.ShowDialog(this) == DialogResult.OK)
+                    txtUsuario.Text = registro.UsuarioRegistrado.NombreUsuario;
             }
         }
     }

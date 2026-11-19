@@ -1,8 +1,8 @@
 Id,NombreUsuario,Nombre,Edad,Peso,Estatura,IdEntrenador
 1,sotoe,Emanuel Soto,25,70,1.75,1
 2,ramirezk,Karen Ramirez,28,62.5,1.65,3
-3,gonzalezj,Jorge Gonzalez,34,85,1.80,2
-4,lopezm,Maria Lopez,22,58,1.60,5
+3,gonzalezj,Jorge Gonzalez,34,85,1.8,2
+4,lopezm,Maria Lopez,22,58,1.6,5
 5,perezc,Carlos Perez,41,92,1.78,6
 6,sanchezl,Laura Sanchez,30,65,1.68,7
 7,diazr,Ricardo Diaz,27,78,1.82,8
@@ -14,7 +14,7 @@ Id,NombreUsuario,Nombre,Edad,Peso,Estatura,IdEntrenador
 13,herrerac,Cristian Herrera,33,90,1.84,14
 14,medinan,Natalia Medina,26,60,1.66,15
 15,castilloj,Julian Castillo,38,95,1.77,16
-16,vargasa,Alejandra Vargas,31,67,1.70,17
+16,vargasa,Alejandra Vargas,31,67,1.7,17
 17,ortizm,Manuel Ortiz,43,98,1.73,18
 18,romerog,Gabriela Romero,23,57,1.61,19
 19,navarrop,Pedro Navarro,35,83,1.81,20
@@ -23,7 +23,7 @@ Id,NombreUsuario,Nombre,Edad,Peso,Estatura,IdEntrenador
 22,cruzl,Lucia Cruz,25,59,1.64,23
 23,reyesh,Hugo Reyes,32,86,1.83,24
 24,aguilarb,Beatriz Aguilar,37,70,1.69,25
-25,mendozaa,Alexis Mendoza,20,74,1.80,26
+25,mendozaa,Alexis Mendoza,20,74,1.8,26
 26,vegac,Camila Vega,27,61,1.65,27
 27,rojast,Tomas Rojas,44,89,1.72,28
 28,salazarp,Paola Salazar,29,64,1.62,29
@@ -39,3 +39,4 @@ Id,NombreUsuario,Nombre,Edad,Peso,Estatura,IdEntrenador
 38,delgadom,Marcela Delgado,38,71,1.63,39
 39,acostaw,Walter Acosta,42,93,1.79,40
 40,bravot,Tatiana Bravo,24,58,1.67,1
+41,alvarezp,Pedro Alvarez,23,99,1.88,

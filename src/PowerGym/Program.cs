@@ -17,24 +17,31 @@ namespace PowerGym
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var controlador = new PowerGym.Controladores.LoginControlador(
-                new PowerGym.Servicios.Autenticacion(
-                    new PowerGym.Repositorios.RepositorioUsuarios(),
-                    new PowerGym.Repositorios.RepositorioEntrenadores()));
+            var repoUsuario = new PowerGym.Repositorios.RepositorioUsuarios();
+            var repoEntrenadores = new PowerGym.Repositorios.RepositorioEntrenadores();
+
+            var loginControlador = new PowerGym.Controladores.LoginControlador(
+                new PowerGym.Servicios.Autenticacion(repoUsuario, repoEntrenadores));
+
+            var registroControlador = new PowerGym.Controladores.RegistroControlador(
+                new PowerGym.Servicios.Registro(repoUsuario, repoEntrenadores));
+
+            var misUsuariosControlador = new PowerGym.Controladores.MisUsuariosControlador(
+                new PowerGym.Servicios.ServicioEntrenadores(repoUsuario));
             bool volver = true;
             while (volver)
             {
-                using (var login = new PowerGym.Vistas.FormLogin(controlador))
+                using (var login = new PowerGym.Vistas.FormLogin(loginControlador,registroControlador))
                 {
                     // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
                     if (login.ShowDialog() != DialogResult.OK)
                         return;
-                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada))
+                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador))
                     {
                         principal.ShowDialog();
                         volver = principal.CerroSesion;
                     }
-                    Application.Run(new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada));
+                   
                 }
 
             }

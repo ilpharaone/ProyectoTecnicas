@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PowerGym.Modelos;
+using PowerGym.Controladores;
 
 namespace PowerGym.Vistas
 {
@@ -13,11 +14,13 @@ namespace PowerGym.Vistas
     {
         private readonly Persona _persona;
         private MenuStrip _menu;
+        private readonly IMisUsuariosControlador _misUsuarios;
 
         public bool CerroSesion { get; private set; }
-        public FormPrincipal(Persona persona)
+        public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios)
         {
             _persona = persona;
+            _misUsuarios = misUsuarios;
             Text = $"PowerGym - {persona.Nombre} ({Rol()})";
             ClientSize = new Size(800, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -73,15 +76,28 @@ namespace PowerGym.Vistas
             AgregarOpcion("Rutinas");
             AgregarOpcion("Clases");
             AgregarOpcion("Notificaciones");
+            AgregarOpcion("Mis Usuarios", AbrirMisUsuarios);
         }
 
-        private void AgregarOpcion(string texto)
+        private void AbrirMisUsuarios()
+        {
+            using(var ventana = new FormMisUsuarios(_misUsuarios, (Entrenador)_persona))
+            {
+                ventana.ShowDialog(this);
+            }
+        }
+        private void AgregarOpcion(string texto, Action accion = null)
         {
             ToolStripMenuItem opcion = new ToolStripMenuItem(texto);
 
             // "(s, e) => ..." es una función corta que se ejecuta al hacer clic.
-            opcion.Click += (s, e) => MessageBox.Show($"'{texto}' estará disponible pronto.");
-
+            opcion.Click += (s, e) =>
+            {
+                if (accion != null)
+                    accion();
+                else
+                    MessageBox.Show($"'{texto}' estará disponible pronto.");
+            };
             _menu.Items.Add(opcion);
         }
 
