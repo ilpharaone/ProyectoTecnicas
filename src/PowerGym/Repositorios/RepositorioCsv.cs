@@ -62,7 +62,7 @@ namespace PowerGym.Repositorios
             return lista;
         }
 
-        private void Guardar()
+        protected virtual void Guardar()
         {
             List<string> lineas = new List<string> { _encabezado };
 
