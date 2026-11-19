@@ -17,8 +17,18 @@ namespace PowerGym
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           
-            Application.Run(new FormPrincipal());
+            var controlador = new PowerGym.Controladores.LoginControlador(
+                new PowerGym.Servicios.Autenticacion(
+                    new PowerGym.Repositorios.RepositorioUsuarios(),
+                    new PowerGym.Repositorios.RepositorioEntrenadores()));
+            using (var login = new PowerGym.Vistas.FormLogin(controlador))
+            {
+                // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
+                if (login.ShowDialog() != DialogResult.OK)
+                    return;
+                Application.Run(new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada));
+            }
         }
+
     }
 }
