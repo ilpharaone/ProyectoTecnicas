@@ -14,21 +14,30 @@ namespace PowerGym
         [STAThread]
         static void Main()
         {
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var controlador = new PowerGym.Controladores.LoginControlador(
                 new PowerGym.Servicios.Autenticacion(
                     new PowerGym.Repositorios.RepositorioUsuarios(),
                     new PowerGym.Repositorios.RepositorioEntrenadores()));
-            using (var login = new PowerGym.Vistas.FormLogin(controlador))
+            bool volver = true;
+            while (volver)
             {
-                // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
-                if (login.ShowDialog() != DialogResult.OK)
-                    return;
-                Application.Run(new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada));
+                using (var login = new PowerGym.Vistas.FormLogin(controlador))
+                {
+                    // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
+                    if (login.ShowDialog() != DialogResult.OK)
+                        return;
+                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada))
+                    {
+                        principal.ShowDialog();
+                        volver = principal.CerroSesion;
+                    }
+                    Application.Run(new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada));
+                }
+
             }
         }
-
     }
 }
