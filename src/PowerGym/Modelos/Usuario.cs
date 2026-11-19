@@ -14,6 +14,7 @@ namespace PowerGym.Modelos
         private double _peso;
         private double _estatura;
 
+
         public Usuario(int id, string nombreUsuario, string nombre, int edad,double peso, double estatura):base(id,nombreUsuario,nombre, edad)
         {
             Peso = peso;
@@ -42,6 +43,8 @@ namespace PowerGym.Modelos
                 _estatura = value;
             }
         }
+
+        public int? IdEntrenador { get; set; }
 
         //IMC = Peso/Estatura al cuadrado
 

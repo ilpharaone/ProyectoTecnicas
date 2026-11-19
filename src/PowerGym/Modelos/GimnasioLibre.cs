@@ -21,4 +21,4 @@ namespace PowerGym.Modelos
         public override bool RequiereInscripcion() => false;
     }
 }
-}
+
