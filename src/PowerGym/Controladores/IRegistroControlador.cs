@@ -11,7 +11,7 @@ namespace PowerGym.Controladores
     {
         string SugerirNombreUsuario(string nombreCompleto);
 
-        List<Entrenador> ObtenerEntrenador();
+        List<Entrenador> ObtenerEntrenadores();
 
         
         Usuario Registrar(string nombre, string nombreUsuario,

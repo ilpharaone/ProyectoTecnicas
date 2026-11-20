@@ -120,11 +120,12 @@ namespace PowerGym.Vistas
             {
                 int? idEntrenador = (cmbEntrenador.SelectedItem as Entrenador)?.Id;
                 UsuarioRegistrado = _controlador.Registrar(
-                    txtNombre.Text, 
+                    txtNombre.Text,
                     txtUsuario.Text,
-                    txtEdad.Text, 
+                    txtEdad.Text,
                     txtPeso.Text,
-                    txtEstatura.Text);
+                    txtEstatura.Text,
+                    idEntrenador)  ;
 
                 // IMC viene calculado desde el modelo.
                 MessageBox.Show(

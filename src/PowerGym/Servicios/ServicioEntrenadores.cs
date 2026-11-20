@@ -8,7 +8,7 @@ using PowerGym.Repositorios;
 
 namespace PowerGym.Servicios
 {
-    class ServicioEntrenadores
+    public class ServicioEntrenadores
     {
         private readonly IRepositorio<Usuario> _usuarios;
 

@@ -20,7 +20,10 @@ namespace PowerGym.Servicios
             _usuarios = usuarios;
             _entrenadores = entrenadores;
         }
-
+        public List<Entrenador> ObtenerEntrenadores()
+        {
+            return _entrenadores.ObtenerTodos();
+        }
         public bool NombreUsuarioExiste(string nombreUsuario)
         {
             
@@ -77,7 +80,7 @@ namespace PowerGym.Servicios
             }
 
             public Usuario Registrar(string nombre, string nombreUsuario,
-                                 int edad, double peso, double estatura, int idEntrenador)
+                                 int edad, double peso, double estatura, int? idEntrenador)
             {
                 if (string.IsNullOrWhiteSpace(nombreUsuario))
                     throw new ArgumentException("El nombre de usuario es obligatorio.");
@@ -98,6 +101,7 @@ namespace PowerGym.Servicios
                     throw new ArgumentException("Ese nombre de usuario ya existe, elija otro.");
                 Usuario nuevo = new Usuario(0, usuarioFinal, nombre, edad, peso, estatura);
                 nuevo.IdEntrenador = idEntrenador;
+               
                 _usuarios.Agregar(nuevo);
                 return nuevo;
             }

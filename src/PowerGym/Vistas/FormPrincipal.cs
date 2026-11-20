@@ -72,11 +72,11 @@ namespace PowerGym.Vistas
 
         private void AgregarOpcionEntrenador()
         {
-            AgregarOpcion("Mis usuarios");
+            AgregarOpcion("Mis usuarios",AbrirMisUsuarios);
             AgregarOpcion("Rutinas");
             AgregarOpcion("Clases");
             AgregarOpcion("Notificaciones");
-            AgregarOpcion("Mis Usuarios", AbrirMisUsuarios);
+            
         }
 
         private void AbrirMisUsuarios()
