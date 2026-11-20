@@ -31,9 +31,11 @@ namespace PowerGym
             var misUsuariosControlador =
                 new PowerGym.Controladores.MisUsuariosControlador(servicioEntrenadores);
 
+            var repoRutinas = new PowerGym.Repositorios.RepositorioRutinas();
             var rutinasControlador = new PowerGym.Controladores.RutinasControlador(
-                new PowerGym.Servicios.ServicioRutinas(new PowerGym.Repositorios.RepositorioRutinas()),
-                servicioEntrenadores);
+                new PowerGym.Servicios.ServicioRutinas(repoRutinas), servicioEntrenadores);
+
+            var aumentosControlador = PowerGym.Controladores.Aumento(new PowerGym.Servicios.)
             bool volver = true;
             while (volver)
             {

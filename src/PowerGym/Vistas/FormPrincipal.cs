@@ -16,12 +16,14 @@ namespace PowerGym.Vistas
         private MenuStrip _menu;
         private readonly IMisUsuariosControlador _misUsuarios;
         private readonly IRutinasControlador _rutinas;
+        private readonly IAumentosControlador _aumentos;
         public bool CerroSesion { get; private set; }
-        public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas)
+        public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas, IAumentosControlador aumentos)
         {
             _persona = persona;
             _misUsuarios = misUsuarios;
             _rutinas = rutinas;
+            _aumentos = aumentos;
             Text = $"PowerGym - {persona.Nombre} ({Rol()})";
             ClientSize = new Size(800, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -62,7 +64,7 @@ namespace PowerGym.Vistas
 
         private void AgregarOpcionUsuario()
         {
-            AgregarOpcion("Mis rutinas");
+            AgregarOpcion("Mis rutinas",AbrirInformacion);
             AgregarOpcion("Mis visitas");
             AgregarOpcion("Mis mediciones");
             AgregarOpcion("Clases");
@@ -80,6 +82,13 @@ namespace PowerGym.Vistas
             
         }
 
+        private void AbrirInformacion()
+        {
+            using (var ventana = new FormInformacion(_aumentos, (Usuario)_persona))
+            {
+                ventana.ShowDialog(this);
+            }
+        }
         private void AbrirMisUsuarios()
         {
             using(var ventana = new FormMisUsuarios(_misUsuarios, (Entrenador)_persona))
