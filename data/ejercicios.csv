@@ -1,87 +1,87 @@
 IdRutina,Nombre,Series,Repeticiones,PesoKg
-1,Curl de biceps,3,12,12.0
-1,Remo con barra,4,10,35.0
-1,Elevaciones laterales,3,15,8.0
+1,Curl de biceps,3,12,12
+1,Remo con barra,4,10,35
+1,Elevaciones laterales,3,15,8
 1,Burpees,3,12,0
 2,Curl de biceps,3,12,14.5
 2,Remo con barra,4,10,37.5
 2,Elevaciones laterales,3,15,10.5
 2,Burpees,3,12,0
-3,Curl de biceps,3,12,17.0
-3,Remo con barra,4,10,40.0
-3,Elevaciones laterales,3,15,13.0
+3,Curl de biceps,3,12,17
+3,Remo con barra,4,10,40
+3,Elevaciones laterales,3,15,13
 3,Burpees,3,12,0
 4,Curl de biceps,4,12,19.5
 4,Remo con barra,5,10,42.5
 4,Elevaciones laterales,4,15,15.5
 4,Burpees,4,12,0
-5,Curl de biceps,4,12,22.0
-5,Remo con barra,5,10,45.0
-5,Elevaciones laterales,4,15,18.0
+5,Curl de biceps,4,12,22
+5,Remo con barra,5,10,45
+5,Elevaciones laterales,4,15,18
 5,Burpees,4,12,0
 6,Fondos,3,12,0
-6,Triceps en polea,3,12,20.0
-6,Hip thrust,4,10,50.0
-6,Peso muerto,3,8,60.0
+6,Triceps en polea,3,12,20
+6,Hip thrust,4,10,50
+6,Peso muerto,3,8,60
 7,Fondos,3,12,0
 7,Triceps en polea,3,12,22.5
 7,Hip thrust,4,10,52.5
 7,Peso muerto,3,8,62.5
 8,Fondos,3,12,0
-8,Triceps en polea,3,12,25.0
-8,Hip thrust,4,10,55.0
-8,Peso muerto,3,8,65.0
+8,Triceps en polea,3,12,25
+8,Hip thrust,4,10,55
+8,Peso muerto,3,8,65
 9,Fondos,4,12,0
 9,Triceps en polea,4,12,27.5
 9,Hip thrust,5,10,57.5
 9,Peso muerto,4,8,67.5
 10,Fondos,4,12,0
-10,Triceps en polea,4,12,30.0
-10,Hip thrust,5,10,60.0
-10,Peso muerto,4,8,70.0
+10,Triceps en polea,4,12,30
+10,Hip thrust,5,10,60
+10,Peso muerto,4,8,70
 11,Plancha,3,30,0
-11,Elevaciones laterales,3,15,8.0
+11,Elevaciones laterales,3,15,8
 11,Abdominales,3,20,0
-11,Remo con barra,4,10,35.0
+11,Remo con barra,4,10,35
 12,Plancha,3,30,0
 12,Elevaciones laterales,3,15,10.5
 12,Abdominales,3,20,0
 12,Remo con barra,4,10,37.5
 13,Plancha,3,30,0
-13,Elevaciones laterales,3,15,13.0
+13,Elevaciones laterales,3,15,13
 13,Abdominales,3,20,0
-13,Remo con barra,4,10,40.0
+13,Remo con barra,4,10,40
 14,Plancha,4,30,0
 14,Elevaciones laterales,4,15,15.5
 14,Abdominales,4,20,0
 14,Remo con barra,5,10,42.5
 15,Plancha,4,30,0
-15,Elevaciones laterales,4,15,18.0
+15,Elevaciones laterales,4,15,18
 15,Abdominales,4,20,0
-15,Remo con barra,5,10,45.0
-16,Remo con barra,4,10,35.0
+15,Remo con barra,5,10,45
+16,Remo con barra,4,10,35
 16,Dominadas,3,8,0
-16,Curl de biceps,3,12,12.0
-16,Jalon al pecho,4,10,40.0
+16,Curl de biceps,3,12,12
+16,Jalon al pecho,4,10,40
 17,Remo con barra,4,10,37.5
 17,Dominadas,3,8,0
 17,Curl de biceps,3,12,14.5
 17,Jalon al pecho,4,10,42.5
-18,Remo con barra,4,10,40.0
+18,Remo con barra,4,10,40
 18,Dominadas,3,8,0
-18,Curl de biceps,3,12,17.0
-18,Jalon al pecho,4,10,45.0
+18,Curl de biceps,3,12,17
+18,Jalon al pecho,4,10,45
 19,Remo con barra,5,10,42.5
 19,Dominadas,4,8,0
 19,Curl de biceps,4,12,19.5
 19,Jalon al pecho,5,10,47.5
-20,Remo con barra,5,10,45.0
+20,Remo con barra,5,10,45
 20,Dominadas,4,8,0
-20,Curl de biceps,4,12,22.0
-20,Jalon al pecho,5,10,50.0
+20,Curl de biceps,4,12,22
+20,Jalon al pecho,5,10,50
 21,Flexiones,3,15,0
 21,Fondos,3,12,0
-21,Zancadas,3,12,20.0
+21,Zancadas,3,12,20
 21,Plancha,3,30,0
 22,Flexiones,3,15,0
 22,Fondos,3,12,0
@@ -89,7 +89,7 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 22,Plancha,3,30,0
 23,Flexiones,3,15,0
 23,Fondos,3,12,0
-23,Zancadas,3,12,25.0
+23,Zancadas,3,12,25
 23,Plancha,3,30,0
 24,Flexiones,4,15,0
 24,Fondos,4,12,0
@@ -97,66 +97,66 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 24,Plancha,4,30,0
 25,Flexiones,4,15,0
 25,Fondos,4,12,0
-25,Zancadas,4,12,30.0
+25,Zancadas,4,12,30
 25,Plancha,4,30,0
 26,Flexiones,4,15,0
 26,Fondos,4,12,0
 26,Zancadas,4,12,32.5
 26,Plancha,4,30,0
-27,Triceps en polea,3,12,20.0
+27,Triceps en polea,3,12,20
 27,Fondos,3,12,0
 27,Plancha,3,30,0
-27,Press militar,3,10,25.0
+27,Press militar,3,10,25
 28,Triceps en polea,3,12,22.5
 28,Fondos,3,12,0
 28,Plancha,3,30,0
 28,Press militar,3,10,27.5
-29,Triceps en polea,3,12,25.0
+29,Triceps en polea,3,12,25
 29,Fondos,3,12,0
 29,Plancha,3,30,0
-29,Press militar,3,10,30.0
+29,Press militar,3,10,30
 30,Triceps en polea,4,12,27.5
 30,Fondos,4,12,0
 30,Plancha,4,30,0
 30,Press militar,4,10,32.5
-31,Triceps en polea,4,12,30.0
+31,Triceps en polea,4,12,30
 31,Fondos,4,12,0
 31,Plancha,4,30,0
-31,Press militar,4,10,35.0
+31,Press militar,4,10,35
 32,Dominadas,3,8,0
-32,Prensa de piernas,4,12,80.0
+32,Prensa de piernas,4,12,80
 32,Flexiones,3,15,0
-32,Hip thrust,4,10,50.0
+32,Hip thrust,4,10,50
 33,Dominadas,3,8,0
 33,Prensa de piernas,4,12,82.5
 33,Flexiones,3,15,0
 33,Hip thrust,4,10,52.5
 34,Dominadas,3,8,0
-34,Prensa de piernas,4,12,85.0
+34,Prensa de piernas,4,12,85
 34,Flexiones,3,15,0
-34,Hip thrust,4,10,55.0
+34,Hip thrust,4,10,55
 35,Burpees,3,12,0
-35,Zancadas,3,12,20.0
+35,Zancadas,3,12,20
 35,Abdominales,3,20,0
-35,Jalon al pecho,4,10,40.0
+35,Jalon al pecho,4,10,40
 36,Burpees,3,12,0
 36,Zancadas,3,12,22.5
 36,Abdominales,3,20,0
 36,Jalon al pecho,4,10,42.5
 37,Burpees,3,12,0
-37,Zancadas,3,12,25.0
+37,Zancadas,3,12,25
 37,Abdominales,3,20,0
-37,Jalon al pecho,4,10,45.0
+37,Jalon al pecho,4,10,45
 38,Burpees,4,12,0
 38,Zancadas,4,12,27.5
 38,Abdominales,4,20,0
 38,Jalon al pecho,5,10,47.5
 39,Burpees,4,12,0
-39,Zancadas,4,12,30.0
+39,Zancadas,4,12,30
 39,Abdominales,4,20,0
-39,Jalon al pecho,5,10,50.0
+39,Jalon al pecho,5,10,50
 40,Plancha,3,30,0
-40,Remo con barra,4,10,35.0
+40,Remo con barra,4,10,35
 40,Burpees,3,12,0
 40,Flexiones,3,15,0
 41,Plancha,3,30,0
@@ -164,7 +164,7 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 41,Burpees,3,12,0
 41,Flexiones,3,15,0
 42,Plancha,3,30,0
-42,Remo con barra,4,10,40.0
+42,Remo con barra,4,10,40
 42,Burpees,3,12,0
 42,Flexiones,3,15,0
 43,Plancha,4,30,0
@@ -172,57 +172,57 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 43,Burpees,4,12,0
 43,Flexiones,4,15,0
 44,Plancha,4,30,0
-44,Remo con barra,5,10,45.0
+44,Remo con barra,5,10,45
 44,Burpees,4,12,0
 44,Flexiones,4,15,0
-45,Triceps en polea,3,12,20.0
-45,Curl de biceps,3,12,12.0
+45,Triceps en polea,3,12,20
+45,Curl de biceps,3,12,12
 45,Fondos,3,12,0
-45,Remo con barra,4,10,35.0
+45,Remo con barra,4,10,35
 46,Triceps en polea,3,12,22.5
 46,Curl de biceps,3,12,14.5
 46,Fondos,3,12,0
 46,Remo con barra,4,10,37.5
-47,Triceps en polea,3,12,25.0
-47,Curl de biceps,3,12,17.0
+47,Triceps en polea,3,12,25
+47,Curl de biceps,3,12,17
 47,Fondos,3,12,0
-47,Remo con barra,4,10,40.0
+47,Remo con barra,4,10,40
 48,Triceps en polea,4,12,27.5
 48,Curl de biceps,4,12,19.5
 48,Fondos,4,12,0
 48,Remo con barra,5,10,42.5
-49,Triceps en polea,4,12,30.0
-49,Curl de biceps,4,12,22.0
+49,Triceps en polea,4,12,30
+49,Curl de biceps,4,12,22
 49,Fondos,4,12,0
-49,Remo con barra,5,10,45.0
+49,Remo con barra,5,10,45
 50,Triceps en polea,4,12,32.5
 50,Curl de biceps,4,12,24.5
 50,Fondos,4,12,0
 50,Remo con barra,5,10,47.5
-51,Press militar,3,10,25.0
-51,Jalon al pecho,4,10,40.0
-51,Triceps en polea,3,12,20.0
+51,Press militar,3,10,25
+51,Jalon al pecho,4,10,40
+51,Triceps en polea,3,12,20
 51,Plancha,3,30,0
 52,Press militar,3,10,27.5
 52,Jalon al pecho,4,10,42.5
 52,Triceps en polea,3,12,22.5
 52,Plancha,3,30,0
-53,Press militar,3,10,30.0
-53,Jalon al pecho,4,10,45.0
-53,Triceps en polea,3,12,25.0
+53,Press militar,3,10,30
+53,Jalon al pecho,4,10,45
+53,Triceps en polea,3,12,25
 53,Plancha,3,30,0
 54,Press militar,4,10,32.5
 54,Jalon al pecho,5,10,47.5
 54,Triceps en polea,4,12,27.5
 54,Plancha,4,30,0
-55,Press militar,4,10,35.0
-55,Jalon al pecho,5,10,50.0
-55,Triceps en polea,4,12,30.0
+55,Press militar,4,10,35
+55,Jalon al pecho,5,10,50
+55,Triceps en polea,4,12,30
 55,Plancha,4,30,0
 56,Fondos,3,12,0
 56,Abdominales,3,20,0
 56,Dominadas,3,8,0
-56,Prensa de piernas,4,12,80.0
+56,Prensa de piernas,4,12,80
 57,Fondos,3,12,0
 57,Abdominales,3,20,0
 57,Dominadas,3,8,0
@@ -230,7 +230,7 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 58,Fondos,3,12,0
 58,Abdominales,3,20,0
 58,Dominadas,3,8,0
-58,Prensa de piernas,4,12,85.0
+58,Prensa de piernas,4,12,85
 59,Fondos,4,12,0
 59,Abdominales,4,20,0
 59,Dominadas,4,8,0
@@ -238,28 +238,28 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 60,Fondos,4,12,0
 60,Abdominales,4,20,0
 60,Dominadas,4,8,0
-60,Prensa de piernas,5,12,90.0
-61,Triceps en polea,3,12,20.0
-61,Press militar,3,10,25.0
+60,Prensa de piernas,5,12,90
+61,Triceps en polea,3,12,20
+61,Press militar,3,10,25
 61,Burpees,3,12,0
-61,Peso muerto,3,8,60.0
+61,Peso muerto,3,8,60
 62,Triceps en polea,3,12,22.5
 62,Press militar,3,10,27.5
 62,Burpees,3,12,0
 62,Peso muerto,3,8,62.5
-63,Triceps en polea,3,12,25.0
-63,Press militar,3,10,30.0
+63,Triceps en polea,3,12,25
+63,Press militar,3,10,30
 63,Burpees,3,12,0
-63,Peso muerto,3,8,65.0
+63,Peso muerto,3,8,65
 64,Triceps en polea,4,12,27.5
 64,Press militar,4,10,32.5
 64,Burpees,4,12,0
 64,Peso muerto,4,8,67.5
-65,Triceps en polea,4,12,30.0
-65,Press militar,4,10,35.0
+65,Triceps en polea,4,12,30
+65,Press militar,4,10,35
 65,Burpees,4,12,0
-65,Peso muerto,4,8,70.0
-66,Peso muerto,3,8,60.0
+65,Peso muerto,4,8,70
+66,Peso muerto,3,8,60
 66,Flexiones,3,15,0
 66,Burpees,3,12,0
 66,Abdominales,3,20,0
@@ -267,7 +267,7 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 67,Flexiones,3,15,0
 67,Burpees,3,12,0
 67,Abdominales,3,20,0
-68,Peso muerto,3,8,65.0
+68,Peso muerto,3,8,65
 68,Flexiones,3,15,0
 68,Burpees,3,12,0
 68,Abdominales,3,20,0
@@ -275,535 +275,536 @@ IdRutina,Nombre,Series,Repeticiones,PesoKg
 69,Flexiones,4,15,0
 69,Burpees,4,12,0
 69,Abdominales,4,20,0
-70,Peso muerto,4,8,70.0
+70,Peso muerto,4,8,70
 70,Flexiones,4,15,0
 70,Burpees,4,12,0
 70,Abdominales,4,20,0
 71,Fondos,3,12,0
-71,Prensa de piernas,4,12,80.0
-71,Press de banca,4,10,40.0
-71,Peso muerto,3,8,60.0
+71,Prensa de piernas,4,12,80
+71,Press de banca,4,10,40
+71,Peso muerto,3,8,60
 72,Fondos,3,12,0
 72,Prensa de piernas,4,12,82.5
 72,Press de banca,4,10,42.5
 72,Peso muerto,3,8,62.5
 73,Fondos,3,12,0
-73,Prensa de piernas,4,12,85.0
-73,Press de banca,4,10,45.0
-73,Peso muerto,3,8,65.0
+73,Prensa de piernas,4,12,85
+73,Press de banca,4,10,45
+73,Peso muerto,3,8,65
 74,Fondos,4,12,0
 74,Prensa de piernas,5,12,87.5
 74,Press de banca,5,10,47.5
 74,Peso muerto,4,8,67.5
 75,Fondos,4,12,0
-75,Prensa de piernas,5,12,90.0
-75,Press de banca,5,10,50.0
-75,Peso muerto,4,8,70.0
+75,Prensa de piernas,5,12,90
+75,Press de banca,5,10,50
+75,Peso muerto,4,8,70
 76,Fondos,4,12,0
 76,Prensa de piernas,5,12,92.5
 76,Press de banca,5,10,52.5
 76,Peso muerto,4,8,72.5
-77,Triceps en polea,3,12,20.0
-77,Prensa de piernas,4,12,80.0
-77,Hip thrust,4,10,50.0
-77,Peso muerto,3,8,60.0
+77,Triceps en polea,3,12,20
+77,Prensa de piernas,4,12,80
+77,Hip thrust,4,10,50
+77,Peso muerto,3,8,60
 78,Triceps en polea,3,12,22.5
 78,Prensa de piernas,4,12,82.5
 78,Hip thrust,4,10,52.5
 78,Peso muerto,3,8,62.5
-79,Triceps en polea,3,12,25.0
-79,Prensa de piernas,4,12,85.0
-79,Hip thrust,4,10,55.0
-79,Peso muerto,3,8,65.0
+79,Triceps en polea,3,12,25
+79,Prensa de piernas,4,12,85
+79,Hip thrust,4,10,55
+79,Peso muerto,3,8,65
 80,Triceps en polea,4,12,27.5
 80,Prensa de piernas,5,12,87.5
 80,Hip thrust,5,10,57.5
 80,Peso muerto,4,8,67.5
-81,Triceps en polea,4,12,30.0
-81,Prensa de piernas,5,12,90.0
-81,Hip thrust,5,10,60.0
-81,Peso muerto,4,8,70.0
-82,Press militar,3,10,25.0
+81,Triceps en polea,4,12,30
+81,Prensa de piernas,5,12,90
+81,Hip thrust,5,10,60
+81,Peso muerto,4,8,70
+82,Press militar,3,10,25
 82,Abdominales,3,20,0
-82,Prensa de piernas,4,12,80.0
+82,Prensa de piernas,4,12,80
 82,Dominadas,3,8,0
 83,Press militar,3,10,27.5
 83,Abdominales,3,20,0
 83,Prensa de piernas,4,12,82.5
 83,Dominadas,3,8,0
-84,Press militar,3,10,30.0
+84,Press militar,3,10,30
 84,Abdominales,3,20,0
-84,Prensa de piernas,4,12,85.0
+84,Prensa de piernas,4,12,85
 84,Dominadas,3,8,0
 85,Press militar,4,10,32.5
 85,Abdominales,4,20,0
 85,Prensa de piernas,5,12,87.5
 85,Dominadas,4,8,0
-86,Press militar,4,10,35.0
+86,Press militar,4,10,35
 86,Abdominales,4,20,0
-86,Prensa de piernas,5,12,90.0
+86,Prensa de piernas,5,12,90
 86,Dominadas,4,8,0
-87,Press militar,3,10,25.0
+87,Press militar,3,10,25
 87,Dominadas,3,8,0
-87,Hip thrust,4,10,50.0
-87,Zancadas,3,12,20.0
+87,Hip thrust,4,10,50
+87,Zancadas,3,12,20
 88,Press militar,3,10,27.5
 88,Dominadas,3,8,0
 88,Hip thrust,4,10,52.5
 88,Zancadas,3,12,22.5
-89,Press militar,3,10,30.0
+89,Press militar,3,10,30
 89,Dominadas,3,8,0
-89,Hip thrust,4,10,55.0
-89,Zancadas,3,12,25.0
+89,Hip thrust,4,10,55
+89,Zancadas,3,12,25
 90,Press militar,4,10,32.5
 90,Dominadas,4,8,0
 90,Hip thrust,5,10,57.5
 90,Zancadas,4,12,27.5
-91,Press militar,4,10,35.0
+91,Press militar,4,10,35
 91,Dominadas,4,8,0
-91,Hip thrust,5,10,60.0
-91,Zancadas,4,12,30.0
-92,Press militar,3,10,25.0
-92,Jalon al pecho,4,10,40.0
-92,Press de banca,4,10,40.0
-92,Elevaciones laterales,3,15,8.0
+91,Hip thrust,5,10,60
+91,Zancadas,4,12,30
+92,Press militar,3,10,25
+92,Jalon al pecho,4,10,40
+92,Press de banca,4,10,40
+92,Elevaciones laterales,3,15,8
 93,Press militar,3,10,27.5
 93,Jalon al pecho,4,10,42.5
 93,Press de banca,4,10,42.5
 93,Elevaciones laterales,3,15,10.5
-94,Press militar,3,10,30.0
-94,Jalon al pecho,4,10,45.0
-94,Press de banca,4,10,45.0
-94,Elevaciones laterales,3,15,13.0
-95,Press militar,3,10,25.0
-95,Curl de biceps,3,12,12.0
-95,Jalon al pecho,4,10,40.0
-95,Press de banca,4,10,40.0
+94,Press militar,3,10,30
+94,Jalon al pecho,4,10,45
+94,Press de banca,4,10,45
+94,Elevaciones laterales,3,15,13
+95,Press militar,3,10,25
+95,Curl de biceps,3,12,12
+95,Jalon al pecho,4,10,40
+95,Press de banca,4,10,40
 96,Press militar,3,10,27.5
 96,Curl de biceps,3,12,14.5
 96,Jalon al pecho,4,10,42.5
 96,Press de banca,4,10,42.5
-97,Press militar,3,10,30.0
-97,Curl de biceps,3,12,17.0
-97,Jalon al pecho,4,10,45.0
-97,Press de banca,4,10,45.0
+97,Press militar,3,10,30
+97,Curl de biceps,3,12,17
+97,Jalon al pecho,4,10,45
+97,Press de banca,4,10,45
 98,Press militar,4,10,32.5
 98,Curl de biceps,4,12,19.5
 98,Jalon al pecho,5,10,47.5
 98,Press de banca,5,10,47.5
-99,Press militar,4,10,35.0
-99,Curl de biceps,4,12,22.0
-99,Jalon al pecho,5,10,50.0
-99,Press de banca,5,10,50.0
+99,Press militar,4,10,35
+99,Curl de biceps,4,12,22
+99,Jalon al pecho,5,10,50
+99,Press de banca,5,10,50
 100,Press militar,4,10,37.5
 100,Curl de biceps,4,12,24.5
 100,Jalon al pecho,5,10,52.5
 100,Press de banca,5,10,52.5
-101,Remo con barra,4,10,35.0
-101,Press de banca,4,10,40.0
+101,Remo con barra,4,10,35
+101,Press de banca,4,10,40
 101,Abdominales,3,20,0
 101,Fondos,3,12,0
 102,Remo con barra,4,10,37.5
 102,Press de banca,4,10,42.5
 102,Abdominales,3,20,0
 102,Fondos,3,12,0
-103,Remo con barra,4,10,40.0
-103,Press de banca,4,10,45.0
+103,Remo con barra,4,10,40
+103,Press de banca,4,10,45
 103,Abdominales,3,20,0
 103,Fondos,3,12,0
 104,Remo con barra,5,10,42.5
 104,Press de banca,5,10,47.5
 104,Abdominales,4,20,0
 104,Fondos,4,12,0
-105,Remo con barra,5,10,45.0
-105,Press de banca,5,10,50.0
+105,Remo con barra,5,10,45
+105,Press de banca,5,10,50
 105,Abdominales,4,20,0
 105,Fondos,4,12,0
-106,Triceps en polea,3,12,20.0
+106,Triceps en polea,3,12,20
 106,Burpees,3,12,0
-106,Jalon al pecho,4,10,40.0
-106,Hip thrust,4,10,50.0
+106,Jalon al pecho,4,10,40
+106,Hip thrust,4,10,50
 107,Triceps en polea,3,12,22.5
 107,Burpees,3,12,0
 107,Jalon al pecho,4,10,42.5
 107,Hip thrust,4,10,52.5
-108,Triceps en polea,3,12,25.0
+108,Triceps en polea,3,12,25
 108,Burpees,3,12,0
-108,Jalon al pecho,4,10,45.0
-108,Hip thrust,4,10,55.0
+108,Jalon al pecho,4,10,45
+108,Hip thrust,4,10,55
 109,Triceps en polea,4,12,27.5
 109,Burpees,4,12,0
 109,Jalon al pecho,5,10,47.5
 109,Hip thrust,5,10,57.5
-110,Triceps en polea,4,12,30.0
+110,Triceps en polea,4,12,30
 110,Burpees,4,12,0
-110,Jalon al pecho,5,10,50.0
-110,Hip thrust,5,10,60.0
+110,Jalon al pecho,5,10,50
+110,Hip thrust,5,10,60
 111,Flexiones,3,15,0
-111,Curl de biceps,3,12,12.0
-111,Hip thrust,4,10,50.0
-111,Triceps en polea,3,12,20.0
+111,Curl de biceps,3,12,12
+111,Hip thrust,4,10,50
+111,Triceps en polea,3,12,20
 112,Flexiones,3,15,0
 112,Curl de biceps,3,12,14.5
 112,Hip thrust,4,10,52.5
 112,Triceps en polea,3,12,22.5
 113,Flexiones,3,15,0
-113,Curl de biceps,3,12,17.0
-113,Hip thrust,4,10,55.0
-113,Triceps en polea,3,12,25.0
+113,Curl de biceps,3,12,17
+113,Hip thrust,4,10,55
+113,Triceps en polea,3,12,25
 114,Flexiones,4,15,0
 114,Curl de biceps,4,12,19.5
 114,Hip thrust,5,10,57.5
 114,Triceps en polea,4,12,27.5
 115,Flexiones,4,15,0
-115,Curl de biceps,4,12,22.0
-115,Hip thrust,5,10,60.0
-115,Triceps en polea,4,12,30.0
-116,Triceps en polea,3,12,20.0
-116,Sentadilla,4,10,50.0
-116,Peso muerto,3,8,60.0
-116,Elevaciones laterales,3,15,8.0
+115,Curl de biceps,4,12,22
+115,Hip thrust,5,10,60
+115,Triceps en polea,4,12,30
+116,Triceps en polea,3,12,20
+116,Sentadilla,4,10,50
+116,Peso muerto,3,8,60
+116,Elevaciones laterales,3,15,8
 117,Triceps en polea,3,12,22.5
 117,Sentadilla,4,10,52.5
 117,Peso muerto,3,8,62.5
 117,Elevaciones laterales,3,15,10.5
-118,Triceps en polea,3,12,25.0
-118,Sentadilla,4,10,55.0
-118,Peso muerto,3,8,65.0
-118,Elevaciones laterales,3,15,13.0
+118,Triceps en polea,3,12,25
+118,Sentadilla,4,10,55
+118,Peso muerto,3,8,65
+118,Elevaciones laterales,3,15,13
 119,Triceps en polea,4,12,27.5
 119,Sentadilla,5,10,57.5
 119,Peso muerto,4,8,67.5
 119,Elevaciones laterales,4,15,15.5
-120,Triceps en polea,4,12,30.0
-120,Sentadilla,5,10,60.0
-120,Peso muerto,4,8,70.0
-120,Elevaciones laterales,4,15,18.0
-121,Curl de biceps,3,12,12.0
-121,Hip thrust,4,10,50.0
-121,Press militar,3,10,25.0
-121,Elevaciones laterales,3,15,8.0
+120,Triceps en polea,4,12,30
+120,Sentadilla,5,10,60
+120,Peso muerto,4,8,70
+120,Elevaciones laterales,4,15,18
+121,Curl de biceps,3,12,12
+121,Hip thrust,4,10,50
+121,Press militar,3,10,25
+121,Elevaciones laterales,3,15,8
 122,Curl de biceps,3,12,14.5
 122,Hip thrust,4,10,52.5
 122,Press militar,3,10,27.5
 122,Elevaciones laterales,3,15,10.5
-123,Curl de biceps,3,12,17.0
-123,Hip thrust,4,10,55.0
-123,Press militar,3,10,30.0
-123,Elevaciones laterales,3,15,13.0
+123,Curl de biceps,3,12,17
+123,Hip thrust,4,10,55
+123,Press militar,3,10,30
+123,Elevaciones laterales,3,15,13
 124,Curl de biceps,4,12,19.5
 124,Hip thrust,5,10,57.5
 124,Press militar,4,10,32.5
 124,Elevaciones laterales,4,15,15.5
-125,Curl de biceps,4,12,22.0
-125,Hip thrust,5,10,60.0
-125,Press militar,4,10,35.0
-125,Elevaciones laterales,4,15,18.0
+125,Curl de biceps,4,12,22
+125,Hip thrust,5,10,60
+125,Press militar,4,10,35
+125,Elevaciones laterales,4,15,18
 126,Curl de biceps,4,12,24.5
 126,Hip thrust,5,10,62.5
 126,Press militar,4,10,37.5
 126,Elevaciones laterales,4,15,20.5
 127,Abdominales,3,20,0
-127,Peso muerto,3,8,60.0
-127,Curl de biceps,3,12,12.0
-127,Jalon al pecho,4,10,40.0
+127,Peso muerto,3,8,60
+127,Curl de biceps,3,12,12
+127,Jalon al pecho,4,10,40
 128,Abdominales,3,20,0
 128,Peso muerto,3,8,62.5
 128,Curl de biceps,3,12,14.5
 128,Jalon al pecho,4,10,42.5
 129,Abdominales,3,20,0
-129,Peso muerto,3,8,65.0
-129,Curl de biceps,3,12,17.0
-129,Jalon al pecho,4,10,45.0
+129,Peso muerto,3,8,65
+129,Curl de biceps,3,12,17
+129,Jalon al pecho,4,10,45
 130,Abdominales,4,20,0
 130,Peso muerto,4,8,67.5
 130,Curl de biceps,4,12,19.5
 130,Jalon al pecho,5,10,47.5
 131,Abdominales,4,20,0
-131,Peso muerto,4,8,70.0
-131,Curl de biceps,4,12,22.0
-131,Jalon al pecho,5,10,50.0
-132,Press militar,3,10,25.0
+131,Peso muerto,4,8,70
+131,Curl de biceps,4,12,22
+131,Jalon al pecho,5,10,50
+132,Press militar,3,10,25
 132,Plancha,3,30,0
-132,Remo con barra,4,10,35.0
-132,Hip thrust,4,10,50.0
+132,Remo con barra,4,10,35
+132,Hip thrust,4,10,50
 133,Press militar,3,10,27.5
 133,Plancha,3,30,0
 133,Remo con barra,4,10,37.5
 133,Hip thrust,4,10,52.5
-134,Press militar,3,10,30.0
+134,Press militar,3,10,30
 134,Plancha,3,30,0
-134,Remo con barra,4,10,40.0
-134,Hip thrust,4,10,55.0
+134,Remo con barra,4,10,40
+134,Hip thrust,4,10,55
 135,Press militar,4,10,32.5
 135,Plancha,4,30,0
 135,Remo con barra,5,10,42.5
 135,Hip thrust,5,10,57.5
-136,Press militar,4,10,35.0
+136,Press militar,4,10,35
 136,Plancha,4,30,0
-136,Remo con barra,5,10,45.0
-136,Hip thrust,5,10,60.0
-137,Peso muerto,3,8,60.0
-137,Zancadas,3,12,20.0
+136,Remo con barra,5,10,45
+136,Hip thrust,5,10,60
+137,Peso muerto,3,8,60
+137,Zancadas,3,12,20
 137,Dominadas,3,8,0
-137,Sentadilla,4,10,50.0
+137,Sentadilla,4,10,50
 138,Peso muerto,3,8,62.5
 138,Zancadas,3,12,22.5
 138,Dominadas,3,8,0
 138,Sentadilla,4,10,52.5
-139,Peso muerto,3,8,65.0
-139,Zancadas,3,12,25.0
+139,Peso muerto,3,8,65
+139,Zancadas,3,12,25
 139,Dominadas,3,8,0
-139,Sentadilla,4,10,55.0
+139,Sentadilla,4,10,55
 140,Peso muerto,4,8,67.5
 140,Zancadas,4,12,27.5
 140,Dominadas,4,8,0
 140,Sentadilla,5,10,57.5
-141,Peso muerto,4,8,70.0
-141,Zancadas,4,12,30.0
+141,Peso muerto,4,8,70
+141,Zancadas,4,12,30
 141,Dominadas,4,8,0
-141,Sentadilla,5,10,60.0
-142,Curl de biceps,3,12,12.0
-142,Prensa de piernas,4,12,80.0
-142,Jalon al pecho,4,10,40.0
-142,Triceps en polea,3,12,20.0
+141,Sentadilla,5,10,60
+142,Curl de biceps,3,12,12
+142,Prensa de piernas,4,12,80
+142,Jalon al pecho,4,10,40
+142,Triceps en polea,3,12,20
 143,Curl de biceps,3,12,14.5
 143,Prensa de piernas,4,12,82.5
 143,Jalon al pecho,4,10,42.5
 143,Triceps en polea,3,12,22.5
-144,Curl de biceps,3,12,17.0
-144,Prensa de piernas,4,12,85.0
-144,Jalon al pecho,4,10,45.0
-144,Triceps en polea,3,12,25.0
+144,Curl de biceps,3,12,17
+144,Prensa de piernas,4,12,85
+144,Jalon al pecho,4,10,45
+144,Triceps en polea,3,12,25
 145,Curl de biceps,4,12,19.5
 145,Prensa de piernas,5,12,87.5
 145,Jalon al pecho,5,10,47.5
 145,Triceps en polea,4,12,27.5
-146,Curl de biceps,4,12,22.0
-146,Prensa de piernas,5,12,90.0
-146,Jalon al pecho,5,10,50.0
-146,Triceps en polea,4,12,30.0
-147,Hip thrust,4,10,50.0
-147,Press de banca,4,10,40.0
+146,Curl de biceps,4,12,22
+146,Prensa de piernas,5,12,90
+146,Jalon al pecho,5,10,50
+146,Triceps en polea,4,12,30
+147,Hip thrust,4,10,50
+147,Press de banca,4,10,40
 147,Abdominales,3,20,0
-147,Elevaciones laterales,3,15,8.0
+147,Elevaciones laterales,3,15,8
 148,Hip thrust,4,10,52.5
 148,Press de banca,4,10,42.5
 148,Abdominales,3,20,0
 148,Elevaciones laterales,3,15,10.5
-149,Hip thrust,4,10,55.0
-149,Press de banca,4,10,45.0
+149,Hip thrust,4,10,55
+149,Press de banca,4,10,45
 149,Abdominales,3,20,0
-149,Elevaciones laterales,3,15,13.0
+149,Elevaciones laterales,3,15,13
 150,Hip thrust,5,10,57.5
 150,Press de banca,5,10,47.5
 150,Abdominales,4,20,0
 150,Elevaciones laterales,4,15,15.5
-151,Hip thrust,5,10,60.0
-151,Press de banca,5,10,50.0
+151,Hip thrust,5,10,60
+151,Press de banca,5,10,50
 151,Abdominales,4,20,0
-151,Elevaciones laterales,4,15,18.0
+151,Elevaciones laterales,4,15,18
 152,Hip thrust,5,10,62.5
 152,Press de banca,5,10,52.5
 152,Abdominales,4,20,0
 152,Elevaciones laterales,4,15,20.5
-153,Sentadilla,4,10,50.0
+153,Sentadilla,4,10,50
 153,Abdominales,3,20,0
-153,Prensa de piernas,4,12,80.0
-153,Press militar,3,10,25.0
+153,Prensa de piernas,4,12,80
+153,Press militar,3,10,25
 154,Sentadilla,4,10,52.5
 154,Abdominales,3,20,0
 154,Prensa de piernas,4,12,82.5
 154,Press militar,3,10,27.5
-155,Sentadilla,4,10,55.0
+155,Sentadilla,4,10,55
 155,Abdominales,3,20,0
-155,Prensa de piernas,4,12,85.0
-155,Press militar,3,10,30.0
+155,Prensa de piernas,4,12,85
+155,Press militar,3,10,30
 156,Sentadilla,5,10,57.5
 156,Abdominales,4,20,0
 156,Prensa de piernas,5,12,87.5
 156,Press militar,4,10,32.5
-157,Sentadilla,5,10,60.0
+157,Sentadilla,5,10,60
 157,Abdominales,4,20,0
-157,Prensa de piernas,5,12,90.0
-157,Press militar,4,10,35.0
+157,Prensa de piernas,5,12,90
+157,Press militar,4,10,35
 158,Fondos,3,12,0
 158,Plancha,3,30,0
-158,Curl de biceps,3,12,12.0
-158,Triceps en polea,3,12,20.0
+158,Curl de biceps,3,12,12
+158,Triceps en polea,3,12,20
 159,Fondos,3,12,0
 159,Plancha,3,30,0
 159,Curl de biceps,3,12,14.5
 159,Triceps en polea,3,12,22.5
 160,Fondos,3,12,0
 160,Plancha,3,30,0
-160,Curl de biceps,3,12,17.0
-160,Triceps en polea,3,12,25.0
+160,Curl de biceps,3,12,17
+160,Triceps en polea,3,12,25
 161,Fondos,4,12,0
 161,Plancha,4,30,0
 161,Curl de biceps,4,12,19.5
 161,Triceps en polea,4,12,27.5
 162,Fondos,4,12,0
 162,Plancha,4,30,0
-162,Curl de biceps,4,12,22.0
-162,Triceps en polea,4,12,30.0
-163,Peso muerto,3,8,60.0
-163,Remo con barra,4,10,35.0
+162,Curl de biceps,4,12,22
+162,Triceps en polea,4,12,30
+163,Peso muerto,3,8,60
+163,Remo con barra,4,10,35
 163,Dominadas,3,8,0
-163,Jalon al pecho,4,10,40.0
+163,Jalon al pecho,4,10,40
 164,Peso muerto,3,8,62.5
 164,Remo con barra,4,10,37.5
 164,Dominadas,3,8,0
 164,Jalon al pecho,4,10,42.5
-165,Peso muerto,3,8,65.0
-165,Remo con barra,4,10,40.0
+165,Peso muerto,3,8,65
+165,Remo con barra,4,10,40
 165,Dominadas,3,8,0
-165,Jalon al pecho,4,10,45.0
+165,Jalon al pecho,4,10,45
 166,Burpees,3,12,0
-166,Elevaciones laterales,3,15,8.0
-166,Peso muerto,3,8,60.0
-166,Remo con barra,4,10,35.0
+166,Elevaciones laterales,3,15,8
+166,Peso muerto,3,8,60
+166,Remo con barra,4,10,35
 167,Burpees,3,12,0
 167,Elevaciones laterales,3,15,10.5
 167,Peso muerto,3,8,62.5
 167,Remo con barra,4,10,37.5
 168,Burpees,3,12,0
-168,Elevaciones laterales,3,15,13.0
-168,Peso muerto,3,8,65.0
-168,Remo con barra,4,10,40.0
+168,Elevaciones laterales,3,15,13
+168,Peso muerto,3,8,65
+168,Remo con barra,4,10,40
 169,Burpees,4,12,0
 169,Elevaciones laterales,4,15,15.5
 169,Peso muerto,4,8,67.5
 169,Remo con barra,5,10,42.5
 170,Burpees,4,12,0
-170,Elevaciones laterales,4,15,18.0
-170,Peso muerto,4,8,70.0
-170,Remo con barra,5,10,45.0
-171,Elevaciones laterales,3,15,8.0
+170,Elevaciones laterales,4,15,18
+170,Peso muerto,4,8,70
+170,Remo con barra,5,10,45
+171,Elevaciones laterales,3,15,8
 171,Dominadas,3,8,0
-171,Curl de biceps,3,12,12.0
-171,Prensa de piernas,4,12,80.0
+171,Curl de biceps,3,12,12
+171,Prensa de piernas,4,12,80
 172,Elevaciones laterales,3,15,10.5
 172,Dominadas,3,8,0
 172,Curl de biceps,3,12,14.5
 172,Prensa de piernas,4,12,82.5
-173,Elevaciones laterales,3,15,13.0
+173,Elevaciones laterales,3,15,13
 173,Dominadas,3,8,0
-173,Curl de biceps,3,12,17.0
-173,Prensa de piernas,4,12,85.0
+173,Curl de biceps,3,12,17
+173,Prensa de piernas,4,12,85
 174,Elevaciones laterales,4,15,15.5
 174,Dominadas,4,8,0
 174,Curl de biceps,4,12,19.5
 174,Prensa de piernas,5,12,87.5
-175,Elevaciones laterales,4,15,18.0
+175,Elevaciones laterales,4,15,18
 175,Dominadas,4,8,0
-175,Curl de biceps,4,12,22.0
-175,Prensa de piernas,5,12,90.0
+175,Curl de biceps,4,12,22
+175,Prensa de piernas,5,12,90
 176,Elevaciones laterales,4,15,20.5
 176,Dominadas,4,8,0
 176,Curl de biceps,4,12,24.5
 176,Prensa de piernas,5,12,92.5
 177,Flexiones,3,15,0
-177,Zancadas,3,12,20.0
-177,Triceps en polea,3,12,20.0
+177,Zancadas,3,12,20
+177,Triceps en polea,3,12,20
 177,Abdominales,3,20,0
 178,Flexiones,3,15,0
 178,Zancadas,3,12,22.5
 178,Triceps en polea,3,12,22.5
 178,Abdominales,3,20,0
 179,Flexiones,3,15,0
-179,Zancadas,3,12,25.0
-179,Triceps en polea,3,12,25.0
+179,Zancadas,3,12,25
+179,Triceps en polea,3,12,25
 179,Abdominales,3,20,0
 180,Flexiones,4,15,0
 180,Zancadas,4,12,27.5
 180,Triceps en polea,4,12,27.5
 180,Abdominales,4,20,0
 181,Flexiones,4,15,0
-181,Zancadas,4,12,30.0
-181,Triceps en polea,4,12,30.0
+181,Zancadas,4,12,30
+181,Triceps en polea,4,12,30
 181,Abdominales,4,20,0
 182,Plancha,3,30,0
-182,Elevaciones laterales,3,15,8.0
-182,Press de banca,4,10,40.0
+182,Elevaciones laterales,3,15,8
+182,Press de banca,4,10,40
 182,Abdominales,3,20,0
 183,Plancha,3,30,0
 183,Elevaciones laterales,3,15,10.5
 183,Press de banca,4,10,42.5
 183,Abdominales,3,20,0
 184,Plancha,3,30,0
-184,Elevaciones laterales,3,15,13.0
-184,Press de banca,4,10,45.0
+184,Elevaciones laterales,3,15,13
+184,Press de banca,4,10,45
 184,Abdominales,3,20,0
 185,Plancha,4,30,0
 185,Elevaciones laterales,4,15,15.5
 185,Press de banca,5,10,47.5
 185,Abdominales,4,20,0
 186,Plancha,4,30,0
-186,Elevaciones laterales,4,15,18.0
-186,Press de banca,5,10,50.0
+186,Elevaciones laterales,4,15,18
+186,Press de banca,5,10,50
 186,Abdominales,4,20,0
 187,Fondos,3,12,0
-187,Press de banca,4,10,40.0
-187,Peso muerto,3,8,60.0
+187,Press de banca,4,10,40
+187,Peso muerto,3,8,60
 187,Burpees,3,12,0
 188,Fondos,3,12,0
 188,Press de banca,4,10,42.5
 188,Peso muerto,3,8,62.5
 188,Burpees,3,12,0
 189,Fondos,3,12,0
-189,Press de banca,4,10,45.0
-189,Peso muerto,3,8,65.0
+189,Press de banca,4,10,45
+189,Peso muerto,3,8,65
 189,Burpees,3,12,0
 190,Fondos,4,12,0
 190,Press de banca,5,10,47.5
 190,Peso muerto,4,8,67.5
 190,Burpees,4,12,0
 191,Fondos,4,12,0
-191,Press de banca,5,10,50.0
-191,Peso muerto,4,8,70.0
+191,Press de banca,5,10,50
+191,Peso muerto,4,8,70
 191,Burpees,4,12,0
-192,Peso muerto,3,8,60.0
-192,Press de banca,4,10,40.0
+192,Peso muerto,3,8,60
+192,Press de banca,4,10,40
 192,Abdominales,3,20,0
-192,Remo con barra,4,10,35.0
+192,Remo con barra,4,10,35
 193,Peso muerto,3,8,62.5
 193,Press de banca,4,10,42.5
 193,Abdominales,3,20,0
 193,Remo con barra,4,10,37.5
-194,Peso muerto,3,8,65.0
-194,Press de banca,4,10,45.0
+194,Peso muerto,3,8,65
+194,Press de banca,4,10,45
 194,Abdominales,3,20,0
-194,Remo con barra,4,10,40.0
+194,Remo con barra,4,10,40
 195,Peso muerto,4,8,67.5
 195,Press de banca,5,10,47.5
 195,Abdominales,4,20,0
 195,Remo con barra,5,10,42.5
-196,Peso muerto,4,8,70.0
-196,Press de banca,5,10,50.0
+196,Peso muerto,4,8,70
+196,Press de banca,5,10,50
 196,Abdominales,4,20,0
-196,Remo con barra,5,10,45.0
+196,Remo con barra,5,10,45
 197,Burpees,3,12,0
-197,Press militar,3,10,25.0
+197,Press militar,3,10,25
 197,Dominadas,3,8,0
-197,Press de banca,4,10,40.0
+197,Press de banca,4,10,40
 198,Burpees,3,12,0
 198,Press militar,3,10,27.5
 198,Dominadas,3,8,0
 198,Press de banca,4,10,42.5
 199,Burpees,3,12,0
-199,Press militar,3,10,30.0
+199,Press militar,3,10,30
 199,Dominadas,3,8,0
-199,Press de banca,4,10,45.0
+199,Press de banca,4,10,45
 200,Burpees,4,12,0
 200,Press militar,4,10,32.5
 200,Dominadas,4,8,0
 200,Press de banca,5,10,47.5
 201,Burpees,4,12,0
-201,Press militar,4,10,35.0
+201,Press militar,4,10,35
 201,Dominadas,4,8,0
-201,Press de banca,5,10,50.0
+201,Press de banca,5,10,50
 202,Burpees,4,12,0
 202,Press militar,4,10,37.5
 202,Dominadas,4,8,0
 202,Press de banca,5,10,52.5
+203,Press de banca,2,10,40

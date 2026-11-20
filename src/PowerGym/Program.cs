@@ -26,8 +26,14 @@ namespace PowerGym
             var registroControlador = new PowerGym.Controladores.RegistroControlador(
                 new PowerGym.Servicios.Registro(repoUsuario, repoEntrenadores));
 
-            var misUsuariosControlador = new PowerGym.Controladores.MisUsuariosControlador(
-                new PowerGym.Servicios.ServicioEntrenadores(repoUsuario));
+            var servicioEntrenadores = new PowerGym.Servicios.ServicioEntrenadores(repoUsuario);
+
+            var misUsuariosControlador =
+                new PowerGym.Controladores.MisUsuariosControlador(servicioEntrenadores);
+
+            var rutinasControlador = new PowerGym.Controladores.RutinasControlador(
+                new PowerGym.Servicios.ServicioRutinas(new PowerGym.Repositorios.RepositorioRutinas()),
+                servicioEntrenadores);
             bool volver = true;
             while (volver)
             {
@@ -36,7 +42,7 @@ namespace PowerGym
                     // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
                     if (login.ShowDialog() != DialogResult.OK)
                         return;
-                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador))
+                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador,rutinasControlador))
                     {
                         principal.ShowDialog();
                         volver = principal.CerroSesion;
