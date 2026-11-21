@@ -59,7 +59,7 @@ namespace PowerGym.Vistas
             {
                 int fila = tabla.Rows.Add(
                     c.Ejercicio, c.Rutina, c.Fecha.ToString("dd/MM/yyyy"),
-                    c.Series, c.Repeticiones, c.PesoKg,
+                    c.Series, c.Repeticiones, c.Peso,
                     Signo(c.DiferenciaSeries), Signo(c.DiferenciaRepeticiones),
                     Signo(c.DiferenciaPeso));
 

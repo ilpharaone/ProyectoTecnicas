@@ -46,11 +46,12 @@ namespace PowerGym.Servicios
                         actual.Nombre, rutina.Nombre, rutina.FechaInicio,
                         actual.Serie, actual.Repeticiones, actual.Peso,
                         difSeries, difReps, difPeso));
+
+
+                    anteriores[actual.Nombre] = actual;
+
                 }
-
-                anteriores[actual.Nombre] = actual;
             }
-
             return resultado.OrderBy(c => c.Ejercicio).ThenBy(c => c.Fecha).ToList();
         }
     }

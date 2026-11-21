@@ -8,9 +8,7 @@ namespace PowerGym
 {
     static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+
         [STAThread]
         static void Main()
         {
@@ -35,7 +33,7 @@ namespace PowerGym
             var rutinasControlador = new PowerGym.Controladores.RutinasControlador(
                 new PowerGym.Servicios.ServicioRutinas(repoRutinas), servicioEntrenadores);
 
-            var aumentosControlador = PowerGym.Controladores.Aumento(new PowerGym.Servicios.)
+            var aumentosControlador = new PowerGym.Controladores.AumentoControlador(new PowerGym.Servicios.Aumentos(repoRutinas));
             bool volver = true;
             while (volver)
             {
@@ -44,7 +42,7 @@ namespace PowerGym
                     // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
                     if (login.ShowDialog() != DialogResult.OK)
                         return;
-                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador,rutinasControlador))
+                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador,rutinasControlador,aumentosControlador))
                     {
                         principal.ShowDialog();
                         volver = principal.CerroSesion;
