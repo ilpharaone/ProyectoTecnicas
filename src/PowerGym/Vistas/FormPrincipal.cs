@@ -18,15 +18,17 @@ namespace PowerGym.Vistas
         private readonly IRutinasControlador _rutinas;
         private readonly IAumentosControlador _aumentos;
         private readonly IClasesControlador _clases;
+        private readonly IInsigniasControlador _insignias;
         public bool CerroSesion { get; private set; }
         public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas, IAumentosControlador aumentos,
-            IClasesControlador clases)
+            IClasesControlador clases, IInsigniasControlador insignias)
         {
             _persona = persona;
             _misUsuarios = misUsuarios;
             _rutinas = rutinas;
             _aumentos = aumentos;
             _clases = clases;
+            _insignias = insignias;
             Text = $"PowerGym - {persona.Nombre} ({Rol()})";
             ClientSize = new Size(800, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -71,7 +73,7 @@ namespace PowerGym.Vistas
             AgregarOpcion("Mis visitas");
             AgregarOpcion("Mis mediciones");
             AgregarOpcion("Clases", AbrirClase);
-            AgregarOpcion("Insignias");
+            AgregarOpcion("Insignias",AbrirInsignias);
             AgregarOpcion("Notificaciones");
             AgregarOpcion("Reportes");
         }
@@ -111,6 +113,14 @@ namespace PowerGym.Vistas
         private void AbrirClase()
         {
             using (var ventana = new FormClases(_clases, _persona))
+            {
+                ventana.ShowDialog(this);
+            }
+        }
+
+        private void AbrirInsignias()
+        {
+            using (var ventana = new FormInsignias(_insignias, (Usuario)_persona))
             {
                 ventana.ShowDialog(this);
             }

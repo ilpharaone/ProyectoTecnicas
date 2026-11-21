@@ -37,7 +37,22 @@ namespace PowerGym
 
             var repoClases = new PowerGym.Repositorios.RepositorioClases();
             var repoVisitas = new PowerGym.Repositorios.RepositorioVisitas();
+            var repoMediciones = new PowerGym.Repositorios.RepositorioMediciones();
             var clasesControlador = new PowerGym.Controladores.ClasesControlador(new PowerGym.Servicios.ServicioClases(repoClases, repoVisitas, repoEntrenadores));
+            var repoInsignias = new PowerGym.Repositorios.RepositorioInsignias();
+            var reglas = new List<PowerGym.Servicios.IReglaInsignia>
+            {
+                new PowerGym.Servicios.ReglaVisitas(),
+                new PowerGym.Servicios.ReglaMusculatura(),
+                new PowerGym.Servicios.ReglaGrasa(),
+                new PowerGym.Servicios.ReglaPocasVisitas(),
+                new PowerGym.Servicios.ReglaSinProgreso(),
+                new PowerGym.Servicios.ReglaObjetivosIncumplidos()
+            };
+
+            var servicioInsignias = new PowerGym.Servicios.ServicioInsignias(repoInsignias, repoUsuario, repoVisitas, repoMediciones, reglas);
+            servicioInsignias.EvaluarTodos();
+            var insigniasControlador = new PowerGym.Controladores.InsigniasControlador(servicioInsignias);
             bool volver = true;
             while (volver)
             {
@@ -47,7 +62,7 @@ namespace PowerGym
                     if (login.ShowDialog() != DialogResult.OK)
                         return;
                     using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador,rutinasControlador,
-                        aumentosControlador,clasesControlador))
+                        aumentosControlador,clasesControlador,insigniasControlador))
                     {
                         principal.ShowDialog();
                         volver = principal.CerroSesion;

@@ -11,7 +11,7 @@ namespace PowerGym.Modelos
         Musculo,
         Grasa,
         Visitas,
-        AumentoPeso
+        
         
     }
 }

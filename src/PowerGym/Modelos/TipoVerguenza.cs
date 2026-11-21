@@ -10,7 +10,7 @@ namespace PowerGym.Modelos
     {
         PocasVisitas,
         SinProgreso,
-        ObjetivosSinCumplir,
-        RutinaVencida
+        ObjetivosIncumplidos,
+       
     }
 }

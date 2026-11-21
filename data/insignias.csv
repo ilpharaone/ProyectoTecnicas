@@ -1,0 +1,82 @@
+Id,IdUsuario,Categoria,Tipo,Nombre,Descripcion,FechaObtenida
+1,1,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+2,2,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+3,2,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+4,3,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+5,3,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+6,4,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+7,4,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+8,5,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+9,6,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+10,6,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+11,6,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+12,7,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+13,7,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+14,8,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+15,8,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+16,8,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+17,9,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+18,9,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+19,9,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+20,10,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+21,10,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+22,10,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+23,11,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+24,11,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+25,12,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+26,12,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+27,13,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+28,14,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+29,14,Verguenza,SinProgreso,Sin rastro,No ha registrado ninguna medicion,2026-11-20
+30,15,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+31,15,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+32,15,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+33,16,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+34,16,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+35,16,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+36,17,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+37,18,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+38,18,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+39,18,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+40,19,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+41,19,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+42,19,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+43,20,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+44,21,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+45,21,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+46,22,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+47,22,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+48,23,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+49,24,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+50,24,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+51,24,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+52,25,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+53,26,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+54,27,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+55,27,Verguenza,SinProgreso,Sin rastro,No ha registrado ninguna medicion,2026-11-20
+56,28,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+57,28,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+58,29,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+59,30,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+60,30,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+61,31,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+62,32,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+63,32,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+64,32,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+65,33,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+66,33,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+67,34,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+68,34,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+69,35,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+71,36,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+72,36,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+73,36,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+74,37,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+75,38,Verguenza,SinProgreso,Sin rastro,No ha registrado ninguna medicion,2026-11-20
+76,39,Logro,Visitas,Rey de las visitas,20 o mas visitas al gimnasio,2026-11-20
+77,39,Verguenza,ObjetivosIncumplidos,Meta pendiente,No cumplio sus metas de Musculo ni de grasa,2026-11-20
+78,40,Logro,Musculo,Musculo en alza,Gano 1 kg o mas de masa muscular,2026-11-20
+79,40,Logro,Grasa,Quemagrasa,Bajo 2 puntos o mas de grasa corporal,2026-11-20
+80,40,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-20
+81,41,Verguenza,PocasVisitas,Sillon fiel,Esta entre los 10 usuarios con menos visitas,2026-11-21
+82,41,Verguenza,SinProgreso,Sin rastro,No ha registrado ninguna medicion,2026-11-21
