@@ -17,13 +17,16 @@ namespace PowerGym.Vistas
         private readonly IMisUsuariosControlador _misUsuarios;
         private readonly IRutinasControlador _rutinas;
         private readonly IAumentosControlador _aumentos;
+        private readonly IClasesControlador _clases;
         public bool CerroSesion { get; private set; }
-        public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas, IAumentosControlador aumentos)
+        public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas, IAumentosControlador aumentos,
+            IClasesControlador clases)
         {
             _persona = persona;
             _misUsuarios = misUsuarios;
             _rutinas = rutinas;
             _aumentos = aumentos;
+            _clases = clases;
             Text = $"PowerGym - {persona.Nombre} ({Rol()})";
             ClientSize = new Size(800, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -67,7 +70,7 @@ namespace PowerGym.Vistas
             AgregarOpcion("Mis rutinas",AbrirInformacion);
             AgregarOpcion("Mis visitas");
             AgregarOpcion("Mis mediciones");
-            AgregarOpcion("Clases");
+            AgregarOpcion("Clases", AbrirClase);
             AgregarOpcion("Insignias");
             AgregarOpcion("Notificaciones");
             AgregarOpcion("Reportes");
@@ -77,7 +80,7 @@ namespace PowerGym.Vistas
         {
             AgregarOpcion("Mis usuarios", AbrirMisUsuarios);
             AgregarOpcion("Rutinas",AbrirRutinas);
-            AgregarOpcion("Clases");
+            AgregarOpcion("Clases",AbrirClase);
             AgregarOpcion("Notificaciones");
             
         }
@@ -100,6 +103,14 @@ namespace PowerGym.Vistas
         private void AbrirRutinas()
         {
             using (var ventana = new FormRutina(_rutinas, (Entrenador)_persona))
+            {
+                ventana.ShowDialog(this);
+            }
+        }
+
+        private void AbrirClase()
+        {
+            using (var ventana = new FormClases(_clases, _persona))
             {
                 ventana.ShowDialog(this);
             }
