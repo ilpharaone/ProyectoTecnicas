@@ -15,12 +15,7 @@ namespace PowerGym.Vistas
         private readonly ILoginControlador _controlador;
         private readonly IRegistroControlador _registro;
 
-        // Controles (los objetos visibles de la ventana).
-        private Label lblTitulo;
-        private Label lblUsuario;
         private TextBox txtUsuario;
-        private Button btnIngresar;
-        private Button btnRegistrar;
 
         public Persona PersonaAutenticada { get; private set; }
 
@@ -40,15 +35,15 @@ namespace PowerGym.Vistas
             FormBorderStyle = FormBorderStyle.FixedDialog;    // no se puede redimensionar
             MaximizeBox = false;                      // sin botón de maximizar
 
-            lblTitulo = new Label
+            Label lblTitulo = new Label
             {
                 Text = "Bienvenido a PowerGym",
                 Font = new Font("Segoe UI", 13, FontStyle.Bold),
-                AutoSize = true,                      // el label se ajusta al texto
-                Location = new Point(40, 20)          // posición (x, y) desde la esquina superior izquierda
+                AutoSize = true,                      
+                Location = new Point(40, 20)          
             };
 
-            lblUsuario = new Label
+            Label lblUsuario = new Label
             {
                 Text = "Nombre de usuario:",
                 AutoSize = true,
@@ -61,7 +56,7 @@ namespace PowerGym.Vistas
                 Width = 240
             };
 
-            btnIngresar = new Button
+            Button btnIngresar = new Button
             {
                 Text = "Ingresar",
                 Location = new Point(40, 132),
@@ -70,9 +65,9 @@ namespace PowerGym.Vistas
             };
 
             btnIngresar.Click += BtnIngresar_Click;
-            AcceptButton = btnIngresar;
+            
            
-            btnRegistrar = new Button
+            Button btnRegistrar = new Button
             {
                 Text = "Crear Cuenta",
                 Location = new Point(40, 170),
@@ -80,12 +75,14 @@ namespace PowerGym.Vistas
                 Height = 34
             };
             btnRegistrar.Click += BtnRegistrar_Click;
-            Controls.Add(btnRegistrar);
+
+            AcceptButton = btnIngresar;
             // Sin esto los controles no aparecen: hay que agregarlos a la ventana.
             Controls.Add(lblTitulo);
             Controls.Add(lblUsuario);
             Controls.Add(txtUsuario);
             Controls.Add(btnIngresar);
+            Controls.Add(btnRegistrar);
         }
         private void BtnIngresar_Click(object sender, EventArgs e)
         {

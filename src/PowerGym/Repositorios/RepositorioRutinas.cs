@@ -121,14 +121,13 @@ namespace PowerGym.Repositorios
             {
                 foreach (Ejercicio e in rutina.Ejercicios)
                 {
-                    lineas.Add(string.Join(",", new[]
-                    {
+                    lineas.Add(string.Join(",",            
                         rutina.Id.ToString(),
                         e.Nombre,
                         e.Serie.ToString(),
                         e.Repeticiones.ToString(),
                         e.Peso.ToString(CultureInfo.InvariantCulture)
-                    }));
+                    ));
                 }
             }
             File.WriteAllLines(Path.Combine(RutaDatos.Carpeta(), ArchivoEjercicios), lineas);

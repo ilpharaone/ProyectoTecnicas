@@ -12,7 +12,7 @@ namespace PowerGym.Modelos
     public class Rutina
     {
         private string _nombre;
-        private DateTime _fechaInicio;
+        
         private DateTime _fechaFin;
 
         //Identificador de rutina
@@ -29,6 +29,7 @@ namespace PowerGym.Modelos
         //Lista de ejercicios, se inicializa vacia.
         public List<Ejercicio> Ejercicios { get; set; } = new List<Ejercicio>();
 
+        public DateTime FechaInicio { get; set; }
         public string Nombre
         {
             get { return _nombre; }
@@ -40,12 +41,8 @@ namespace PowerGym.Modelos
             }
         }
 
-        // Fecha desde la que la rutina se hizo.
-        public DateTime FechaInicio
-        {
-            get { return _fechaInicio; }
-            set { _fechaInicio = value; }
-        }
+        
+        
 
         //Fecha que termina y recordatorio
         public DateTime FechaFin
@@ -54,7 +51,7 @@ namespace PowerGym.Modelos
             set
             {
                 
-                if (value < _fechaInicio)
+                if (value < FechaInicio)
                     throw new ArgumentException("La fecha de fin no puede ser anterior a la de inicio.");
                 _fechaFin = value;
             }
@@ -77,7 +74,7 @@ namespace PowerGym.Modelos
         public void Agregar(Ejercicio ejercicio)
         {
             if (ejercicio == null)
-                throw new ArgumentException(nameof(ejercicio));
+                throw new ArgumentNullException(nameof(ejercicio));
             Ejercicios.Add(ejercicio);
         }
     }

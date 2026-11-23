@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PowerGym.Repositorios
 {
-   public abstract class RepositorioCsv<T> : IRepositorio<T>
+   public abstract class RepositorioCsv<T> : IRepositorio<T> where T:class
     {
         private readonly string _rutaArchivo;   // "readonly": solo se asigna en el constructor
         private readonly string _encabezado;    // primera línea del CSV

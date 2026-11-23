@@ -53,7 +53,7 @@ namespace PowerGym.Servicios
             if (enRango.Count < 2)
                 return null;
 
-            return new ResumenMediciones(enRango.First(), enRango.Last());
+            return new ResumenMediciones(enRango[0], enRango[enRango.Count-1]);
         }
 
         public List<Ranking> ObtenerTopVisitantes(DateTime desde, DateTime hasta)

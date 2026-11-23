@@ -55,7 +55,7 @@ namespace PowerGym.Servicios
             if (rutina == null)
                 throw new KeyNotFoundException("La rutina ya no existe.");
 
-            // Se valida TODO antes de tocar la rutina. El repositorio devuelve el
+            // Se valida antes de tocar la rutina. El repositorio devuelve el
             // mismo objeto que tiene en memoria, así que un error a medias la dejaría
             // con datos mezclados.
             ValidarEjercicios(ejercicios);

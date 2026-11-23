@@ -71,7 +71,7 @@ namespace PowerGym.Servicios
 
                 foreach (char c in descompuesto)
                 {
-                    // Descarta las tildes (marcas) y todo lo que no sea letra.
+                    // Descarta las tildes (marcas) y lo que no sea letra.
                     if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark
                         && char.IsLetter(c))
                         resultado.Append(c);
@@ -88,13 +88,15 @@ namespace PowerGym.Servicios
                 // La coma separa columnas en el CSV: un nombre con coma dañaría el archivo.
                 if ((nombre ?? "").Contains(',') || nombreUsuario.Contains(','))
                     throw new ArgumentException("No se permiten comas en el nombre ni en el usuario.");
-            
-                if (idEntrenador == null)
+
+            if (idEntrenador == null)
+            {
                 throw new ArgumentException("Seleccione un entrenador.");
-
-                if (_entrenadores.ObtenerPorId(idEntrenador.Value) == null)
+            }
+            if (_entrenadores.ObtenerPorId(idEntrenador.Value) == null)
+            {
                 throw new ArgumentException("El entrenador seleccionado no existe.");
-
+            }
                 string usuarioFinal = nombreUsuario.Trim().ToLowerInvariant();
 
                 if (NombreUsuarioExiste(usuarioFinal))

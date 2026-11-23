@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,73 +20,92 @@ namespace PowerGym
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           
-            var repoUsuario = new RepositorioUsuarios();
-            var repoEntrenadores = new RepositorioEntrenadores();
-            var repoRutinas = new RepositorioRutinas();
-            var repoVisitas = new RepositorioVisitas();
-            var repoMediciones = new RepositorioMediciones();
-            var repoClases = new RepositorioClases();
-            var repoInsignias = new RepositorioInsignias();
-            var repoNotificaciones = new RepositorioNotificaciones();
 
-            var servicioEntrenadores = new ServicioEntrenadores(repoUsuario);
-            var servicioRutinas = new ServicioRutinas(repoRutinas);
+            try
+            {
+                EjecutarAplicacion();
+            }
+            catch (Exception ex) when (ex is IOException || ex is InvalidDataException)
+            {
+                MessageBox.Show(
+                    "No se pudo leer o guardar la información.\n\n" + ex.Message +
+                    "\n\nRevise que los archivos de la carpeta 'data' existan, " +
+                    "que no estén abiertos en Excel y que tengan el formato correcto.",
+                    "PowerGym - Error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private static void EjecutarAplicacion() {
+                var repoUsuario = new RepositorioUsuarios();
+                var repoEntrenadores = new RepositorioEntrenadores();
+                var repoRutinas = new RepositorioRutinas();
+                var repoVisitas = new RepositorioVisitas();
+                var repoMediciones = new RepositorioMediciones();
+                var repoClases = new RepositorioClases();
+                var repoInsignias = new RepositorioInsignias();
+                var repoNotificaciones = new RepositorioNotificaciones();
 
-            var reglas = new List<IReglaInsignia>
+                var servicioEntrenadores = new ServicioEntrenadores(repoUsuario);
+                var servicioRutinas = new ServicioRutinas(repoRutinas);
+
+                var reglas = new List<IReglaInsignia>
             {
                 new ReglaVisitas(), new ReglaMusculatura(), new ReglaGrasa(), new ReglaPocasVisitas(),
                 new ReglaSinProgreso(), new ReglaObjetivosIncumplidos()
             };
 
-            var servicioInsignias = new ServicioInsignias(repoInsignias, repoUsuario, repoVisitas, repoMediciones, reglas);
-            var servicioNotificaciones = new ServicioNotificaciones(repoNotificaciones, repoUsuario, repoRutinas, repoMediciones, repoVisitas);
+                var servicioInsignias = new ServicioInsignias(repoInsignias, repoUsuario, repoVisitas, repoMediciones, reglas);
+                var servicioNotificaciones = new ServicioNotificaciones(repoNotificaciones, repoUsuario, repoRutinas, repoMediciones, repoVisitas);
 
-            servicioInsignias.InsigniaOtorgada += servicioNotificaciones.AlOtorgarseInsignia;
-            servicioRutinas.RutinaAgregada += servicioNotificaciones.AlAgregarseRutina;
+                servicioInsignias.InsigniaOtorgada += servicioNotificaciones.AlOtorgarseInsignia;
+                servicioRutinas.RutinaAgregada += servicioNotificaciones.AlAgregarseRutina;
 
-            servicioNotificaciones.GenerarAvisosAlCargar();
-            servicioInsignias.EvaluarTodos();
+                servicioNotificaciones.GenerarAvisosAlCargar();
+                servicioInsignias.EvaluarTodos();
 
 
-            var loginControlador = new LoginControlador(new Autenticacion(repoUsuario, repoEntrenadores));
+                var loginControlador = new LoginControlador(new Autenticacion(repoUsuario, repoEntrenadores));
 
-            var registroControlador = new RegistroControlador(
-                new Registro(repoUsuario, repoEntrenadores));
+                var registroControlador = new RegistroControlador(
+                    new Registro(repoUsuario, repoEntrenadores));
 
-            var controladores = new ContenedorControladores
-            {
-                MisUsuarios = new MisUsuariosControlador(servicioEntrenadores),
-                Rutinas = new RutinasControlador(servicioRutinas, servicioEntrenadores),
-                Aumentos = new AumentoControlador(new Aumentos(repoRutinas)),
-                Clases = new ClasesControlador(
-                    new ServicioClases(repoClases, repoVisitas, repoEntrenadores)),
-                Insignias = new InsigniasControlador(servicioInsignias),
-                Notificaciones = new NotificacionesControlador(servicioNotificaciones),
-                Informacion = new InformacionControlador(
-                    new ServicioInformacion(repoVisitas, repoMediciones, repoRutinas)),
-                Estadisticas = new EstadisticasControlador(
-                    new ServicioEstadisticas(repoRutinas, repoMediciones, repoVisitas, repoUsuario))
-            };
-
-            bool volverAlLogin = true;
-            while (volverAlLogin)
-            {
-                using (var login = new FormLogin(loginControlador, registroControlador))
+                var controladores = new ContenedorControladores
                 {
-                    // Si cierran el login sin ingresar, el programa termina.
-                    if (login.ShowDialog() != DialogResult.OK)
-                        return;
+                    MisUsuarios = new MisUsuariosControlador(servicioEntrenadores),
+                    Rutinas = new RutinasControlador(servicioRutinas, servicioEntrenadores),
+                    Aumentos = new AumentoControlador(new Aumentos(repoRutinas)),
+                    Clases = new ClasesControlador(
+                        new ServicioClases(repoClases, repoVisitas, repoEntrenadores)),
+                    Insignias = new InsigniasControlador(servicioInsignias),
+                    Notificaciones = new NotificacionesControlador(servicioNotificaciones),
+                    Informacion = new InformacionControlador(
+                        new ServicioInformacion(repoVisitas, repoMediciones, repoRutinas)),
+                    Estadisticas = new EstadisticasControlador(
+                        new ServicioEstadisticas(repoRutinas, repoMediciones, repoVisitas, repoUsuario))
+                };
 
-                    using (var principal = new FormPrincipal(login.PersonaAutenticada, controladores))
+                MostrarVentanas(loginControlador, registroControlador, controladores);
+            }
+
+        private static void MostrarVentanas(ILoginControlador login, IRegistroControlador registro, ContenedorControladores controladores)
+            {
+            bool volverAlLogin = true;
+                 while (volverAlLogin)
+                {
+                    using (var ventanaLogin = new FormLogin(login, registro))
                     {
-                        principal.ShowDialog();
-                        // Cerró con "Cerrar sesión" -> repite; cerró con la X -> termina.
-                        volverAlLogin = principal.CerroSesion;
+                        // Si cierran el login sin ingresar, el programa termina.
+                        if (ventanaLogin.ShowDialog() != DialogResult.OK)
+                            return;
+
+                        using (var principal = new FormPrincipal(
+                                   ventanaLogin.PersonaAutenticada, controladores))
+                        {
+                            principal.ShowDialog();
+                            volverAlLogin = principal.CerroSesion;
+                        }
                     }
                 }
-            }
-            
         }
-    }
+    }  
 }
+

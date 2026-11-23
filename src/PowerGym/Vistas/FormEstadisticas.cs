@@ -87,7 +87,7 @@ namespace PowerGym.Vistas
             Controls.AddRange(new Control[] { dtpDesde, dtpHasta, btnConsultar, pestanas });
         }
 
-        // Mete un control dentro de una pestaña, ocupando todo el espacio.
+        // Mete un control dentro de una pestaña, ocupando el espacio.
         private static TabPage CrearPestana(string titulo, Control contenido)
         {
             contenido.Dock = DockStyle.Fill;
