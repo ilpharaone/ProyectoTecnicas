@@ -46,6 +46,7 @@ namespace PowerGym.Modelos
             Mensaje = mensaje;   
             Leida = false;
         }
+        public bool EsEntrenador { get; set; }
     }
 }
 

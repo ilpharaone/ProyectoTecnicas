@@ -19,9 +19,10 @@ namespace PowerGym.Vistas
         private readonly IAumentosControlador _aumentos;
         private readonly IClasesControlador _clases;
         private readonly IInsigniasControlador _insignias;
+        private readonly INotificacionesControlador _notificaciones;
         public bool CerroSesion { get; private set; }
         public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas, IAumentosControlador aumentos,
-            IClasesControlador clases, IInsigniasControlador insignias)
+            IClasesControlador clases, IInsigniasControlador insignias, INotificacionesControlador notificaciones)
         {
             _persona = persona;
             _misUsuarios = misUsuarios;
@@ -29,6 +30,7 @@ namespace PowerGym.Vistas
             _aumentos = aumentos;
             _clases = clases;
             _insignias = insignias;
+            _notificaciones = notificaciones;
             Text = $"PowerGym - {persona.Nombre} ({Rol()})";
             ClientSize = new Size(800, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -74,7 +76,7 @@ namespace PowerGym.Vistas
             AgregarOpcion("Mis mediciones");
             AgregarOpcion("Clases", AbrirClase);
             AgregarOpcion("Insignias",AbrirInsignias);
-            AgregarOpcion("Notificaciones");
+            AgregarOpcion("Notificaciones",AbrirNotificaciones);
             AgregarOpcion("Reportes");
         }
 
@@ -83,7 +85,7 @@ namespace PowerGym.Vistas
             AgregarOpcion("Mis usuarios", AbrirMisUsuarios);
             AgregarOpcion("Rutinas",AbrirRutinas);
             AgregarOpcion("Clases",AbrirClase);
-            AgregarOpcion("Notificaciones");
+            AgregarOpcion("Notificaciones",AbrirNotificaciones);
             
         }
 
@@ -124,6 +126,15 @@ namespace PowerGym.Vistas
             {
                 ventana.ShowDialog(this);
             }
+        }
+
+        private void AbrirNotificaciones()
+        {
+            using (var ventana = new FormNotificaciones(_notificaciones, _persona)) {
+
+                ventana.ShowDialog(this);
+            }
+
         }
         private void AgregarOpcion(string texto, Action accion = null)
         {

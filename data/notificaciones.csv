@@ -1,0 +1,138 @@
+Id,IdDestinatario,EsEntrenador,Fecha,Tipo,Leida,Mensaje
+1,1,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+2,2,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+3,2,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+4,3,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+5,3,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+6,4,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+7,4,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+8,5,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+9,6,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+10,6,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+11,6,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+12,7,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+13,7,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+14,8,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+15,8,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+16,8,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+17,9,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+18,9,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+19,9,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+20,10,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+21,10,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+22,10,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+23,11,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+24,11,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+25,12,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+26,12,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+27,13,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+28,14,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+29,14,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sin rastro
+30,15,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+31,15,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+32,15,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+33,16,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+34,16,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+35,16,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+36,17,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+37,18,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+38,18,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+39,18,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+40,19,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+41,19,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+42,19,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+43,20,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+44,21,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+45,21,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+46,22,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+47,22,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+48,23,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+49,24,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+50,24,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+51,24,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+52,25,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+53,26,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+54,27,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+55,27,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sin rastro
+56,28,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+57,28,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+58,29,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+59,30,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+60,30,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+61,31,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+62,32,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+63,32,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+64,32,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+65,33,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+66,33,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+67,34,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+68,34,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+69,35,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+70,35,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+71,36,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+72,36,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+73,36,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+74,37,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+75,38,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sin rastro
+76,39,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+77,39,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Meta pendiente
+78,40,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Musculo en alza
+79,40,false,2026-11-20 00:00:00,InsigniaGanada,false,Has ganado la insignia Quemagrasa
+80,40,false,2026-11-20 00:00:00,InsigniaVerguenza,false,Te asignaron la insignia de la verguenza Sillon fiel
+81,29,false,2026-10-09 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 05/10/2026
+82,9,false,2026-10-09 06:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 05/10/2026
+83,17,false,2026-10-11 19:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 05/10/2026
+84,30,false,2026-10-11 09:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 05/10/2026
+85,3,false,2026-10-17 06:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+86,25,false,2026-10-18 18:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+87,12,false,2026-10-17 09:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+88,15,false,2026-10-17 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+89,17,false,2026-10-18 07:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+90,33,false,2026-10-16 18:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+91,27,false,2026-10-18 19:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+92,37,false,2026-10-18 12:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+93,39,false,2026-10-17 18:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 12/10/2026
+94,27,false,2026-10-23 06:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 19/10/2026
+95,5,false,2026-10-25 12:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 19/10/2026
+96,9,false,2026-10-25 18:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 19/10/2026
+97,15,false,2026-10-24 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 19/10/2026
+98,3,false,2026-10-31 19:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 26/10/2026
+99,21,false,2026-10-30 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 26/10/2026
+100,6,false,2026-10-31 09:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 26/10/2026
+101,15,false,2026-11-01 18:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 26/10/2026
+102,33,false,2026-10-31 06:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 26/10/2026
+103,18,false,2026-10-31 07:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 26/10/2026
+104,12,false,2026-11-08 19:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 02/11/2026
+105,39,false,2026-11-07 06:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 02/11/2026
+106,36,false,2026-11-07 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 02/11/2026
+107,20,false,2026-11-08 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 02/11/2026
+108,9,false,2026-11-15 07:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 09/11/2026
+109,30,false,2026-11-14 17:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 09/11/2026
+110,1,false,2026-11-13 18:00:00,Descansa,false,Descansa esta semana: ya acumulaste 5 visitas en la semana del 09/11/2026
+111,9,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 5 usuario 8' de Andrea Torres vence el 24/11/2026. Cargue una nueva.
+112,17,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 5 usuario 16' de Alejandra Vargas vence el 23/11/2026. Cargue una nueva.
+113,21,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 6 usuario 20' de Sofia Jimenez vence el 24/11/2026. Cargue una nueva.
+114,25,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 5 usuario 24' de Beatriz Aguilar vence el 24/11/2026. Cargue una nueva.
+115,29,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 5 usuario 28' de Paola Salazar vence el 22/11/2026. Cargue una nueva.
+116,33,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 5 usuario 32' de Monica Alvarado vence el 23/11/2026. Cargue una nueva.
+117,37,true,2026-11-22 21:44:48,RutinaExpirando,false,La rutina 'Rutina 5 usuario 36' de Karina Araya vence el 23/11/2026. Cargue una nueva.
+118,1,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Emanuel Soto: corresponde el 03/11/2026
+119,2,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Jorge Gonzalez: corresponde el 05/11/2026
+120,6,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Carlos Perez: corresponde el 02/11/2026
+121,8,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Ricardo Diaz: corresponde el 04/11/2026
+122,2,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Daniel Flores: corresponde el 06/11/2026
+123,12,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Sergio Gomez: corresponde el 03/11/2026
+124,14,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Cristian Herrera: corresponde el 05/11/2026
+125,16,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Julian Castillo: corresponde el 02/11/2026
+126,18,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Manuel Ortiz: corresponde el 04/11/2026
+127,20,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Pedro Navarro: corresponde el 06/11/2026
+128,22,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Fernando Morales: corresponde el 03/11/2026
+129,24,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Hugo Reyes: corresponde el 05/11/2026
+130,26,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Alexis Mendoza: corresponde el 02/11/2026
+131,30,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Esteban Ibarra: corresponde el 06/11/2026
+132,32,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Diego Quiros: corresponde el 03/11/2026
+133,34,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Roberto Solis: corresponde el 05/11/2026
+134,36,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Adrian Barboza: corresponde el 02/11/2026
+135,38,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Jose Leon: corresponde el 04/11/2026
+136,40,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Walter Acosta: corresponde el 06/11/2026
+137,1,false,2026-11-22 21:48:20,NuevaRutina,false,Nueva rutina agregada: prueba

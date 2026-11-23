@@ -9,7 +9,7 @@ namespace PowerGym.Modelos
     public enum TipoNotificacion
     {
         InsigniaGanada,
-        InsginiaVerguenza,
+        InsigniaVerguenza,
         NuevaRutina,
         Descansa,
         RutinaExpirando,

@@ -30,8 +30,9 @@ namespace PowerGym
                 new PowerGym.Controladores.MisUsuariosControlador(servicioEntrenadores);
 
             var repoRutinas = new PowerGym.Repositorios.RepositorioRutinas();
+            var servicioRutinas = new PowerGym.Servicios.ServicioRutinas(repoRutinas);
             var rutinasControlador = new PowerGym.Controladores.RutinasControlador(
-                new PowerGym.Servicios.ServicioRutinas(repoRutinas), servicioEntrenadores);
+                servicioRutinas, servicioEntrenadores);
 
             var aumentosControlador = new PowerGym.Controladores.AumentoControlador(new PowerGym.Servicios.Aumentos(repoRutinas));
 
@@ -53,6 +54,14 @@ namespace PowerGym
             var servicioInsignias = new PowerGym.Servicios.ServicioInsignias(repoInsignias, repoUsuario, repoVisitas, repoMediciones, reglas);
             servicioInsignias.EvaluarTodos();
             var insigniasControlador = new PowerGym.Controladores.InsigniasControlador(servicioInsignias);
+           
+            var repoNotificaciones = new PowerGym.Repositorios.RepositorioNotificaciones();
+            var servicioNotificaciones = new PowerGym.Servicios.ServicioNotificaciones(repoNotificaciones, repoUsuario, repoRutinas, repoMediciones, repoVisitas);
+            servicioInsignias.InsigniaOtorgada += servicioNotificaciones.AlOtorgarseInsignia;
+            servicioRutinas.RutinaAgregada += servicioNotificaciones.AlAgregarseRutina;
+            servicioNotificaciones.GenerarAvisosAlCargar();
+
+            var notificacionesControlador = new PowerGym.Controladores.NotificacionesControlador(servicioNotificaciones);
             bool volver = true;
             while (volver)
             {
@@ -62,7 +71,7 @@ namespace PowerGym
                     if (login.ShowDialog() != DialogResult.OK)
                         return;
                     using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador,rutinasControlador,
-                        aumentosControlador,clasesControlador,insigniasControlador))
+                        aumentosControlador,clasesControlador,insigniasControlador,notificacionesControlador))
                     {
                         principal.ShowDialog();
                         volver = principal.CerroSesion;
