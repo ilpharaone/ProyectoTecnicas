@@ -68,7 +68,7 @@ namespace PowerGym.Vistas
             AgregarOpcion("Clases", AbrirClase);
             AgregarOpcion("Insignias", AbrirInsignias);
             AgregarOpcion("Notificaciones", AbrirNotificaciones);
-            AgregarOpcion("Reportes");
+            AgregarOpcion("Reportes",AbrirEstadisticas);
         }
 
         private void AgregarOpcionEntrenador()
@@ -127,6 +127,14 @@ namespace PowerGym.Vistas
                 ventana.ShowDialog(this);
             }
 
+        }
+
+        private void AbrirEstadisticas()
+        {
+            using(var ventana = new FormEstadisticas(_controladores.Estadisticas, (Usuario)_persona))
+            {
+                ventana.ShowDialog(this);
+            }
         }
         private void AgregarOpcion(string texto, Action accion = null)
         {

@@ -63,7 +63,9 @@ namespace PowerGym
                 Insignias = new InsigniasControlador(servicioInsignias),
                 Notificaciones = new NotificacionesControlador(servicioNotificaciones),
                 Informacion = new InformacionControlador(
-                    new ServicioInformacion(repoVisitas, repoMediciones, repoRutinas))
+                    new ServicioInformacion(repoVisitas, repoMediciones, repoRutinas)),
+                Estadisticas = new EstadisticasControlador(
+                    new ServicioEstadisticas(repoRutinas, repoMediciones, repoVisitas, repoUsuario))
             };
 
             bool volverAlLogin = true;

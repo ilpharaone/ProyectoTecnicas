@@ -15,5 +15,7 @@ namespace PowerGym.Controladores
         public IInsigniasControlador Insignias { get; set; }
         public INotificacionesControlador Notificaciones { get; set; }
         public IInformacionControlador Informacion { get; set; }
+
+        public IEstadisticasControlador Estadisticas { get; set; }
     }
 }
