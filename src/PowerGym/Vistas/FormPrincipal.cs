@@ -10,27 +10,16 @@ using PowerGym.Controladores;
 
 namespace PowerGym.Vistas
 {
-    class FormPrincipal:Form
+    public class FormPrincipal:Form
     {
         private readonly Persona _persona;
         private MenuStrip _menu;
-        private readonly IMisUsuariosControlador _misUsuarios;
-        private readonly IRutinasControlador _rutinas;
-        private readonly IAumentosControlador _aumentos;
-        private readonly IClasesControlador _clases;
-        private readonly IInsigniasControlador _insignias;
-        private readonly INotificacionesControlador _notificaciones;
+        private readonly ContenedorControladores _controladores;
         public bool CerroSesion { get; private set; }
-        public FormPrincipal(Persona persona,IMisUsuariosControlador misUsuarios, IRutinasControlador rutinas, IAumentosControlador aumentos,
-            IClasesControlador clases, IInsigniasControlador insignias, INotificacionesControlador notificaciones)
+        public FormPrincipal(Persona persona,ContenedorControladores controladores)
         {
             _persona = persona;
-            _misUsuarios = misUsuarios;
-            _rutinas = rutinas;
-            _aumentos = aumentos;
-            _clases = clases;
-            _insignias = insignias;
-            _notificaciones = notificaciones;
+            _controladores = controladores;
             Text = $"PowerGym - {persona.Nombre} ({Rol()})";
             ClientSize = new Size(800, 500);
             StartPosition = FormStartPosition.CenterScreen;
@@ -67,16 +56,18 @@ namespace PowerGym.Vistas
 
             MainMenuStrip = _menu;
             Controls.Add(_menu);
+            _menu.BringToFront();
         }
 
         private void AgregarOpcionUsuario()
         {
-            AgregarOpcion("Mis rutinas",AbrirInformacion);
-            AgregarOpcion("Mis visitas");
-            AgregarOpcion("Mis mediciones");
+            AgregarOpcion("Mis rutinas", () => AbrirInformacion(0));
+            AgregarOpcion("Mis visitas", () => AbrirInformacion(1));
+            AgregarOpcion("Mis mediciones", () => AbrirInformacion(2));
+            AgregarOpcion("Control de aumentos", () => AbrirInformacion(3));
             AgregarOpcion("Clases", AbrirClase);
-            AgregarOpcion("Insignias",AbrirInsignias);
-            AgregarOpcion("Notificaciones",AbrirNotificaciones);
+            AgregarOpcion("Insignias", AbrirInsignias);
+            AgregarOpcion("Notificaciones", AbrirNotificaciones);
             AgregarOpcion("Reportes");
         }
 
@@ -89,16 +80,17 @@ namespace PowerGym.Vistas
             
         }
 
-        private void AbrirInformacion()
+        private void AbrirInformacion(int pestana)
         {
-            using (var ventana = new FormInformacion(_aumentos, (Usuario)_persona))
+            using (var ventana = new FormInformacion(_controladores.Aumentos,_controladores.Informacion, 
+                (Usuario)_persona,pestana))
             {
                 ventana.ShowDialog(this);
             }
         }
         private void AbrirMisUsuarios()
         {
-            using(var ventana = new FormMisUsuarios(_misUsuarios, (Entrenador)_persona))
+            using(var ventana = new FormMisUsuarios(_controladores.MisUsuarios, (Entrenador)_persona))
             {
                 ventana.ShowDialog(this);
             }
@@ -106,7 +98,7 @@ namespace PowerGym.Vistas
 
         private void AbrirRutinas()
         {
-            using (var ventana = new FormRutina(_rutinas, (Entrenador)_persona))
+            using (var ventana = new FormRutina(_controladores.Rutinas, (Entrenador)_persona))
             {
                 ventana.ShowDialog(this);
             }
@@ -114,7 +106,7 @@ namespace PowerGym.Vistas
 
         private void AbrirClase()
         {
-            using (var ventana = new FormClases(_clases, _persona))
+            using (var ventana = new FormClases(_controladores.Clases, _persona))
             {
                 ventana.ShowDialog(this);
             }
@@ -122,7 +114,7 @@ namespace PowerGym.Vistas
 
         private void AbrirInsignias()
         {
-            using (var ventana = new FormInsignias(_insignias, (Usuario)_persona))
+            using (var ventana = new FormInsignias(_controladores.Insignias, (Usuario)_persona))
             {
                 ventana.ShowDialog(this);
             }
@@ -130,7 +122,7 @@ namespace PowerGym.Vistas
 
         private void AbrirNotificaciones()
         {
-            using (var ventana = new FormNotificaciones(_notificaciones, _persona)) {
+            using (var ventana = new FormNotificaciones(_controladores.Notificaciones, _persona)) {
 
                 ventana.ShowDialog(this);
             }

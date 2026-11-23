@@ -136,3 +136,8 @@ Id,IdDestinatario,EsEntrenador,Fecha,Tipo,Leida,Mensaje
 135,38,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Jose Leon: corresponde el 04/11/2026
 136,40,true,2026-11-22 21:44:48,MedicionPronto,false,Se acerca la medicion de Walter Acosta: corresponde el 06/11/2026
 137,1,false,2026-11-22 21:48:20,NuevaRutina,false,Nueva rutina agregada: prueba
+138,31,true,2026-11-23 12:05:55,RutinaExpirando,false,La rutina 'Rutina 6 usuario 30' de Isabel Pacheco vence el 30/11/2026. Cargue una nueva.
+139,4,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Patricia Rivera: corresponde el 30/11/2026
+140,21,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Sofia Jimenez: corresponde el 30/11/2026
+141,31,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Isabel Pacheco: corresponde el 30/11/2026
+142,1,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Tatiana Bravo: corresponde el 30/11/2026

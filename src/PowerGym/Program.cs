@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PowerGym.Controladores;
+using PowerGym.Repositorios;
+using PowerGym.Servicios;
+using PowerGym.Vistas;
 
 namespace PowerGym
 {
-    static class Program
+    internal static class Program
     {
 
         [STAThread]
@@ -15,71 +19,71 @@ namespace PowerGym
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var repoUsuario = new PowerGym.Repositorios.RepositorioUsuarios();
-            var repoEntrenadores = new PowerGym.Repositorios.RepositorioEntrenadores();
+           
+            var repoUsuario = new RepositorioUsuarios();
+            var repoEntrenadores = new RepositorioEntrenadores();
+            var repoRutinas = new RepositorioRutinas();
+            var repoVisitas = new RepositorioVisitas();
+            var repoMediciones = new RepositorioMediciones();
+            var repoClases = new RepositorioClases();
+            var repoInsignias = new RepositorioInsignias();
+            var repoNotificaciones = new RepositorioNotificaciones();
 
-            var loginControlador = new PowerGym.Controladores.LoginControlador(
-                new PowerGym.Servicios.Autenticacion(repoUsuario, repoEntrenadores));
+            var servicioEntrenadores = new ServicioEntrenadores(repoUsuario);
+            var servicioRutinas = new ServicioRutinas(repoRutinas);
 
-            var registroControlador = new PowerGym.Controladores.RegistroControlador(
-                new PowerGym.Servicios.Registro(repoUsuario, repoEntrenadores));
-
-            var servicioEntrenadores = new PowerGym.Servicios.ServicioEntrenadores(repoUsuario);
-
-            var misUsuariosControlador =
-                new PowerGym.Controladores.MisUsuariosControlador(servicioEntrenadores);
-
-            var repoRutinas = new PowerGym.Repositorios.RepositorioRutinas();
-            var servicioRutinas = new PowerGym.Servicios.ServicioRutinas(repoRutinas);
-            var rutinasControlador = new PowerGym.Controladores.RutinasControlador(
-                servicioRutinas, servicioEntrenadores);
-
-            var aumentosControlador = new PowerGym.Controladores.AumentoControlador(new PowerGym.Servicios.Aumentos(repoRutinas));
-
-            var repoClases = new PowerGym.Repositorios.RepositorioClases();
-            var repoVisitas = new PowerGym.Repositorios.RepositorioVisitas();
-            var repoMediciones = new PowerGym.Repositorios.RepositorioMediciones();
-            var clasesControlador = new PowerGym.Controladores.ClasesControlador(new PowerGym.Servicios.ServicioClases(repoClases, repoVisitas, repoEntrenadores));
-            var repoInsignias = new PowerGym.Repositorios.RepositorioInsignias();
-            var reglas = new List<PowerGym.Servicios.IReglaInsignia>
+            var reglas = new List<IReglaInsignia>
             {
-                new PowerGym.Servicios.ReglaVisitas(),
-                new PowerGym.Servicios.ReglaMusculatura(),
-                new PowerGym.Servicios.ReglaGrasa(),
-                new PowerGym.Servicios.ReglaPocasVisitas(),
-                new PowerGym.Servicios.ReglaSinProgreso(),
-                new PowerGym.Servicios.ReglaObjetivosIncumplidos()
+                new ReglaVisitas(), new ReglaMusculatura(), new ReglaGrasa(), new ReglaPocasVisitas(),
+                new ReglaSinProgreso(), new ReglaObjetivosIncumplidos()
             };
 
-            var servicioInsignias = new PowerGym.Servicios.ServicioInsignias(repoInsignias, repoUsuario, repoVisitas, repoMediciones, reglas);
-            servicioInsignias.EvaluarTodos();
-            var insigniasControlador = new PowerGym.Controladores.InsigniasControlador(servicioInsignias);
-           
-            var repoNotificaciones = new PowerGym.Repositorios.RepositorioNotificaciones();
-            var servicioNotificaciones = new PowerGym.Servicios.ServicioNotificaciones(repoNotificaciones, repoUsuario, repoRutinas, repoMediciones, repoVisitas);
+            var servicioInsignias = new ServicioInsignias(repoInsignias, repoUsuario, repoVisitas, repoMediciones, reglas);
+            var servicioNotificaciones = new ServicioNotificaciones(repoNotificaciones, repoUsuario, repoRutinas, repoMediciones, repoVisitas);
+
             servicioInsignias.InsigniaOtorgada += servicioNotificaciones.AlOtorgarseInsignia;
             servicioRutinas.RutinaAgregada += servicioNotificaciones.AlAgregarseRutina;
-            servicioNotificaciones.GenerarAvisosAlCargar();
 
-            var notificacionesControlador = new PowerGym.Controladores.NotificacionesControlador(servicioNotificaciones);
-            bool volver = true;
-            while (volver)
+            servicioNotificaciones.GenerarAvisosAlCargar();
+            servicioInsignias.EvaluarTodos();
+
+
+            var loginControlador = new LoginControlador(new Autenticacion(repoUsuario, repoEntrenadores));
+
+            var registroControlador = new RegistroControlador(
+                new Registro(repoUsuario, repoEntrenadores));
+
+            var controladores = new ContenedorControladores
             {
-                using (var login = new PowerGym.Vistas.FormLogin(loginControlador,registroControlador))
+                MisUsuarios = new MisUsuariosControlador(servicioEntrenadores),
+                Rutinas = new RutinasControlador(servicioRutinas, servicioEntrenadores),
+                Aumentos = new AumentoControlador(new Aumentos(repoRutinas)),
+                Clases = new ClasesControlador(
+                    new ServicioClases(repoClases, repoVisitas, repoEntrenadores)),
+                Insignias = new InsigniasControlador(servicioInsignias),
+                Notificaciones = new NotificacionesControlador(servicioNotificaciones),
+                Informacion = new InformacionControlador(
+                    new ServicioInformacion(repoVisitas, repoMediciones, repoRutinas))
+            };
+
+            bool volverAlLogin = true;
+            while (volverAlLogin)
+            {
+                using (var login = new FormLogin(loginControlador, registroControlador))
                 {
-                    // ShowDialog abre la ventana y espera. Si la cierran sin ingresar, se sale.
+                    // Si cierran el login sin ingresar, el programa termina.
                     if (login.ShowDialog() != DialogResult.OK)
                         return;
-                    using (var principal = new PowerGym.Vistas.FormPrincipal(login.PersonaAutenticada,misUsuariosControlador,rutinasControlador,
-                        aumentosControlador,clasesControlador,insigniasControlador,notificacionesControlador))
+
+                    using (var principal = new FormPrincipal(login.PersonaAutenticada, controladores))
                     {
                         principal.ShowDialog();
-                        volver = principal.CerroSesion;
+                        // Cerró con "Cerrar sesión" -> repite; cerró con la X -> termina.
+                        volverAlLogin = principal.CerroSesion;
                     }
-                   
                 }
-
             }
+            
         }
     }
 }
