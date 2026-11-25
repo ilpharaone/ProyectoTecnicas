@@ -1,41 +1,41 @@
 Id,Tipo,Nombre,IdEntrenador,Horario,CupoMaximo,InscritosActuales
-1,Yoga,Yoga matutino,3,2026-11-19T07:00:00,15,13
-2,Crossfit,Crossfit matutino,8,2026-11-20T06:00:00,20,15
-3,Zumba,Zumba vespertino,13,2026-11-21T17:00:00,25,8
-4,Pilates,Pilates matutino,17,2026-11-22T08:00:00,12,1
-5,GimnasioLibre,Hora de gimnasio abierto,22,2026-11-23T10:00:00,50,14
-6,Yoga,Yoga vespertino,33,2026-11-24T18:00:00,15,9
-7,Crossfit,Crossfit vespertino,28,2026-11-25T19:00:00,20,9
-8,Zumba,Zumba vespertino,5,2026-11-19T19:00:00,25,9
-9,Pilates,Pilates vespertino,4,2026-11-20T16:00:00,12,1
-10,GimnasioLibre,Hora de gimnasio abierto,2,2026-11-21T14:00:00,50,7
-11,Yoga,Yoga matutino,21,2026-11-22T07:00:00,15,11
-12,Crossfit,Crossfit matutino,12,2026-11-23T06:00:00,20,6
-13,Zumba,Zumba vespertino,31,2026-11-24T17:00:00,25,7
-14,Pilates,Pilates matutino,29,2026-11-25T08:00:00,12,8
-15,GimnasioLibre,Hora de gimnasio abierto,26,2026-11-19T10:00:00,50,2
-16,Yoga,Yoga vespertino,7,2026-11-20T18:00:00,15,6
-17,Crossfit,Crossfit vespertino,32,2026-11-21T19:00:00,20,5
-18,Zumba,Zumba vespertino,19,2026-11-22T19:00:00,25,14
-19,Pilates,Pilates vespertino,11,2026-11-23T16:00:00,12,0
-20,GimnasioLibre,Hora de gimnasio abierto,6,2026-11-24T14:00:00,50,19
-21,Yoga,Yoga matutino,39,2026-11-25T07:00:00,15,15
-22,Crossfit,Crossfit matutino,16,2026-11-19T06:00:00,20,0
-23,Zumba,Zumba vespertino,9,2026-11-20T17:00:00,25,23
-24,Pilates,Pilates matutino,40,2026-11-21T08:00:00,12,12
-25,GimnasioLibre,Hora de gimnasio abierto,30,2026-11-22T10:00:00,50,23
-26,Yoga,Yoga vespertino,27,2026-11-23T18:00:00,15,11
-27,Crossfit,Crossfit vespertino,36,2026-11-24T19:00:00,20,18
-28,Zumba,Zumba vespertino,37,2026-11-25T19:00:00,25,16
-29,Pilates,Pilates vespertino,23,2026-11-19T16:00:00,12,6
-30,GimnasioLibre,Hora de gimnasio abierto,14,2026-11-20T14:00:00,50,10
-31,Yoga,Yoga matutino,15,2026-11-21T07:00:00,15,13
-32,Crossfit,Crossfit matutino,20,2026-11-22T06:00:00,20,1
-33,Zumba,Zumba vespertino,25,2026-11-23T17:00:00,25,20
-34,Pilates,Pilates matutino,10,2026-11-24T08:00:00,12,1
-35,GimnasioLibre,Hora de gimnasio abierto,34,2026-11-25T10:00:00,50,8
-36,Yoga,Yoga vespertino,3,2026-11-19T18:00:00,15,9
-37,Crossfit,Crossfit vespertino,1,2026-11-20T19:00:00,20,0
-38,Zumba,Zumba vespertino,13,2026-11-21T19:00:00,25,8
-39,Pilates,Pilates vespertino,35,2026-11-22T16:00:00,12,1
-40,GimnasioLibre,Hora de gimnasio abierto,18,2026-11-23T14:00:00,50,4
+1,Yoga,Yoga matutino,3,2026-11-19 07:00:00,15,13
+2,Crossfit,Crossfit matutino,8,2026-11-20 06:00:00,20,15
+3,Zumba,Zumba vespertino,13,2026-11-21 17:00:00,25,8
+4,Pilates,Pilates matutino,17,2026-11-22 08:00:00,12,1
+5,GimnasioAbierto,Hora de gimnasio abierto,22,2026-11-23 10:00:00,50,14
+6,Yoga,Yoga vespertino,33,2026-11-24 18:00:00,15,9
+7,Crossfit,Crossfit vespertino,28,2026-11-25 19:00:00,20,9
+8,Zumba,Zumba vespertino,5,2026-11-19 19:00:00,25,9
+9,Pilates,Pilates vespertino,4,2026-11-20 16:00:00,12,1
+10,GimnasioAbierto,Hora de gimnasio abierto,2,2026-11-21 14:00:00,50,7
+11,Yoga,Yoga matutino,21,2026-11-22 07:00:00,15,11
+12,Crossfit,Crossfit matutino,12,2026-11-23 06:00:00,20,6
+13,Zumba,Zumba vespertino,31,2026-11-24 17:00:00,25,7
+14,Pilates,Pilates matutino,29,2026-11-25 08:00:00,12,8
+15,GimnasioAbierto,Hora de gimnasio abierto,26,2026-11-19 10:00:00,50,2
+16,Yoga,Yoga vespertino,7,2026-11-20 18:00:00,15,6
+17,Crossfit,Crossfit vespertino,32,2026-11-21 19:00:00,20,5
+18,Zumba,Zumba vespertino,19,2026-11-22 19:00:00,25,14
+19,Pilates,Pilates vespertino,11,2026-11-23 16:00:00,12,0
+20,GimnasioAbierto,Hora de gimnasio abierto,6,2026-11-24 14:00:00,50,19
+21,Yoga,Yoga matutino,39,2026-11-25 07:00:00,15,15
+22,Crossfit,Crossfit matutino,16,2026-11-19 06:00:00,20,0
+23,Zumba,Zumba vespertino,9,2026-11-20 17:00:00,25,24
+24,Pilates,Pilates matutino,40,2026-11-21 08:00:00,12,12
+25,GimnasioAbierto,Hora de gimnasio abierto,30,2026-11-22 10:00:00,50,23
+26,Yoga,Yoga vespertino,27,2026-11-23 18:00:00,15,11
+27,Crossfit,Crossfit vespertino,36,2026-11-24 19:00:00,20,18
+28,Zumba,Zumba vespertino,37,2026-11-25 19:00:00,25,16
+29,Pilates,Pilates vespertino,23,2026-11-19 16:00:00,12,6
+30,GimnasioAbierto,Hora de gimnasio abierto,14,2026-11-20 14:00:00,50,10
+31,Yoga,Yoga matutino,15,2026-11-21 07:00:00,15,13
+32,Crossfit,Crossfit matutino,20,2026-11-22 06:00:00,20,1
+33,Zumba,Zumba vespertino,25,2026-11-23 17:00:00,25,20
+34,Pilates,Pilates matutino,10,2026-11-24 08:00:00,12,1
+35,GimnasioAbierto,Hora de gimnasio abierto,34,2026-11-25 10:00:00,50,8
+36,Yoga,Yoga vespertino,3,2026-11-19 18:00:00,15,9
+37,Crossfit,Crossfit vespertino,1,2026-11-20 19:00:00,20,0
+38,Zumba,Zumba vespertino,13,2026-11-21 19:00:00,25,8
+39,Pilates,Pilates vespertino,35,2026-11-22 16:00:00,12,1
+40,GimnasioAbierto,Hora de gimnasio abierto,18,2026-11-23 14:00:00,50,4

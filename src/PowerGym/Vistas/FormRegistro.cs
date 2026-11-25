@@ -74,7 +74,7 @@ namespace PowerGym.Vistas
             Button btnRegistrar = new Button
             {
                 Text = "Registrarse",
-                Location = new Point(40, 330),
+                Location = new Point(40, 405),
                 Width = 120,
                 Height = 34
             };
@@ -83,7 +83,7 @@ namespace PowerGym.Vistas
             Button btnCancelar = new Button
             {
                 Text = "Cancelar",
-                Location = new Point(180, 330),
+                Location = new Point(180, 405),
                 Width = 120,
                 Height = 34,
                 DialogResult = DialogResult.Cancel   // cierra la ventana con "Cancelar"

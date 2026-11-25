@@ -141,3 +141,9 @@ Id,IdDestinatario,EsEntrenador,Fecha,Tipo,Leida,Mensaje
 140,21,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Sofia Jimenez: corresponde el 30/11/2026
 141,31,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Isabel Pacheco: corresponde el 30/11/2026
 142,1,true,2026-11-23 12:05:55,MedicionPronto,false,Se acerca la medicion de Tatiana Bravo: corresponde el 30/11/2026
+143,1,false,2026-11-23 17:52:26,InsigniaGanada,false,Has ganado la insignia Rey de las visitas
+144,4,true,2026-11-24 21:13:28,RutinaExpirando,false,La rutina 'Rutina 6 usuario 10' de Patricia Rivera vence el 01/12/2026. Cargue una nueva.
+145,7,true,2026-11-24 21:13:28,MedicionPronto,false,Se acerca la medicion de Laura Sanchez: corresponde el 01/12/2026
+146,17,true,2026-11-24 21:13:28,MedicionPronto,false,Se acerca la medicion de Alejandra Vargas: corresponde el 01/12/2026
+147,27,true,2026-11-24 21:13:28,MedicionPronto,false,Se acerca la medicion de Camila Vega: corresponde el 01/12/2026
+148,37,true,2026-11-24 21:13:28,MedicionPronto,false,Se acerca la medicion de Karina Araya: corresponde el 01/12/2026
